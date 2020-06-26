@@ -1,0 +1,26 @@
+.table{
+	width: 100%;
+	display:block;
+	overflow:hidden;
+	padding: 70px 0;
+	box-sizing: border-box;
+	/*border:2px solid red;*/
+	border-collapse: collapse;
+	padding:5px;
+}
+.inner_div{
+	font-family: 'Flamenco', cursive;
+	font-weight:bold;
+	font-size:30px;
+	text-align:center;
+	color:black;
+}
+.image_cell{
+	width:620px;
+	height:280;
+}
+.content-area{
+	text-align:center;
+	font-weight:lighter;
+	font-size:17px;
+}
