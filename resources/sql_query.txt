@@ -43,6 +43,8 @@ opTime varchar(20) not null,
 
 clTime varchar(20) not null,
 
+disp_img varchar(100) not null,
+
 constraint fk_rest_registers_owners foreign key (owner_id) references owners (owner_id),
 constraint fk_rest_registers_cities foreign key (city_id) references cities (city_id)
 );
@@ -51,7 +53,7 @@ constraint fk_rest_registers_cities foreign key (city_id) references cities (cit
 create table rest_pics
 (
 rest_pic_id int not null auto_increment primary key,
-pic_path varchar(100) not null unique,
+pic_path varchar(100) not null ,
 rest_register_id int not null,
 constraint fk_rest_pics_rest_registers foreign key (rest_register_id) references rest_registers (rest_register_id) 
 );
