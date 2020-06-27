@@ -7,6 +7,9 @@ public class RegisterUser{
 	private String password;
 	private String city;
 
+	public RegisterUser(String email){
+		this.email=email;
+	}
 	public void setUserId(Integer userId){
 			this.userId=userId;
 	}
