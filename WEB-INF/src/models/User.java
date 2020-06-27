@@ -1,6 +1,8 @@
 package models;
 import java.sql.*;
 import org.jasypt.util.password.StrongPasswordEncryptor;
+import org.jasypt.util.text.StrongTextEncryptor;
+
 public class User{
 	private Integer userId;
 	private String userName;
@@ -15,6 +17,9 @@ public class User{
 		this.userName=userName;
 		this.email=email;
 		this.password=password;
+	}
+	public User(String email){
+		this.email=email;
 	}
 	public User(Integer userId,String userName,String email,String password){
 		this.userName=userName;
@@ -83,7 +88,20 @@ public class User{
 		this.userName=userName;
 	} 
 	public String getUserName(){
-		return userName;
+		try{
+				Class.forName("com.mysql.jdbc.Driver");
+				Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/minor?user=root&password=1234");
+				String query="select user_name from users where email=? ";
+				PreparedStatement pst = con.prepareStatement(query);
+				pst.setString(1,email);
+				ResultSet rs = pst.executeQuery();
+				rs.next();
+				userName = rs.getString(1);
+				con.close();
+			}catch(ClassNotFoundException | SQLException e){
+					e.printStackTrace();
+			}
+		return  userName;
 	}
 	
 	public void setEmail(String email){
@@ -96,6 +114,27 @@ public class User{
 		this.password=password;
 	} 
 	public String getPassword(){
-		return password;
+		try{
+			Class.forName("com.mysql.jdbc.Driver");
+			Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/minor?user=root&password=1234");
+			String query="select password from users where email=? ";
+			PreparedStatement pst = con.prepareStatement(query);
+			pst.setString(1,email);
+			ResultSet rs = pst.executeQuery();
+			if(rs.next()){
+				password = rs.getString(1);
+				StrongTextEncryptor ste=new StrongTextEncryptor();
+				ste.setPassword(password);
+				password=ste.decrypt(password);
+				con.close();
+				return password;
+			}
+			else{
+				return "noemail";		
+			}
+		}catch(ClassNotFoundException | SQLException e){
+			e.printStackTrace();
+		}
+		return "noemail";	
 	}
 }

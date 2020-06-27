@@ -2,6 +2,7 @@ package models;
 
 import java.sql.*;
 import org.jasypt.util.password.StrongPasswordEncryptor;
+import org.jasypt.util.text.StrongTextEncryptor;
 
 public class RegisterOwner{
 	private Integer ownerId;
@@ -14,6 +15,13 @@ public class RegisterOwner{
 	}	
 	public RegisterOwner(String ownerName,String email,String password){
 		this.ownerName=ownerName;
+		this.email=email;
+		this.password=password;
+	}
+	public RegisterOwner(String email){
+		this.email=email;
+	}
+	public RegisterOwner(String email,String password){
 		this.email=email;
 		this.password=password;
 	}
@@ -42,6 +50,19 @@ public class RegisterOwner{
 			this. ownerName= ownerName;
 	}
 	public String getOwnerName(){
+		try{
+				Class.forName("com.mysql.jdbc.Driver");
+				Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/minor?user=root&password=1234");
+				String query="select owner_name from owners where email=? ";
+				PreparedStatement pst = con.prepareStatement(query);
+				pst.setString(1,email);
+				ResultSet rs = pst.executeQuery();
+				rs.next();
+				ownerName = rs.getString(1);
+				con.close();
+			}catch(ClassNotFoundException | SQLException e){
+					e.printStackTrace();
+			}
 			return  ownerName;
 	}
 
@@ -56,7 +77,30 @@ public class RegisterOwner{
 			this.password=password;
 	}
 	public String getPassword(){
-			return password;
+		
+		try{
+				Class.forName("com.mysql.jdbc.Driver");
+				Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/minor?user=root&password=1234");
+				String query="select password from owners where email=? ";
+				PreparedStatement pst = con.prepareStatement(query);
+				pst.setString(1,email);
+				ResultSet rs = pst.executeQuery();
+				if(rs.next()){
+					password = rs.getString(1);
+					StrongTextEncryptor ste=new StrongTextEncryptor();
+					ste.setPassword(password);
+					password=ste.decrypt(password);
+					con.close();
+					return password;
+				}else{
+					return "noemail";		
+				}
+				
+			}catch(ClassNotFoundException | SQLException e){
+					e.printStackTrace();
+			}		
+			return "noemail";
+		
 	}
 
 
@@ -74,7 +118,9 @@ public class RegisterOwner{
 			pst.setString(1,ownerName); 
 			pst.setString(2,email); 
 			pst.setString(3,enpass); 
+			//System.out.println(ownerName+email+password);
 			int i=pst.executeUpdate();
+			//System.out.println(i+"=i");
 			if(i==1){
 				flag=true;
 			}
@@ -98,10 +144,11 @@ public class RegisterOwner{
 			PreparedStatement pst=con.prepareStatement(query);
 			pst.setString(1,email);
 			ResultSet rst=pst.executeQuery();
+			System.out.println(email);
 			StrongPasswordEncryptor spe=new StrongPasswordEncryptor();
 			if(rst.next()){
 				flag=spe.checkPassword(password,rst.getString(1));
-				
+				System.out.println(flag);
 			}
 			con.close();
 		}

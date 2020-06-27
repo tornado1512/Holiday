@@ -19,7 +19,7 @@
 							<li><a href="#"><b>ABOUT</b></a></li>
 							<li><a href="#"><b>EXPLORE</b></a></li>
 							<li><a href="#"><b>RESTAURANT</b></a></li>
-							<li><a href="#"><b>SIGNIn</b></a></li>
+							<li><a href="login.jsp"><b>SIGNIN</b></a></li>
 						</ul>
 						<a href="#" class="mobile-icon" onclick="slideshow()"><i class="fa fa-bars"></i></a>
 				</div>
