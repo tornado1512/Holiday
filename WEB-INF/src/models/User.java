@@ -1,13 +1,15 @@
 package models;
 import java.sql.*;
-import org.jasypt.util.password.StrongPasswordEncryptor;
-import org.jasypt.util.text.StrongTextEncryptor;
+//import org.jasypt.util.password.StrongPasswordEncryptor;
+//import org.jasypt.util.text.StrongTextEncryptor;
+import org.jasypt.encryption.pbe.StandardPBEStringEncryptor;
 
 public class User{
 	private Integer userId;
 	private String userName;
 	private String email;
 	private String password;
+	private static String mpCryptoPassword = "BornToFight";
 	
 	
 	public User(){
@@ -41,9 +43,16 @@ public class User{
 			PreparedStatement pst=con.prepareStatement(query);
 			pst.setString(1,email);
 			ResultSet rst=pst.executeQuery();
-			StrongPasswordEncryptor spe=new StrongPasswordEncryptor();
+			StandardPBEStringEncryptor spe=new StandardPBEStringEncryptor();
 			if(rst.next()){
-				flag=spe.checkPassword(password,rst.getString(1));
+				spe.setPassword(mpCryptoPassword);
+				if(password.equals(spe.decrypt(rst.getString(1)))){
+					flag=true;
+				}
+				else{
+					flag=false;
+				}
+				//flag=spe.checkPassword(password,rst.getString(1));
 				
 			}
 			con.close();
@@ -61,8 +70,9 @@ public class User{
 			Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/minor?user=root&password=1234");
 			String query="insert into users (user_name,email,password) value(?,?,?)";
 			PreparedStatement pst=con.prepareStatement(query);
-			StrongPasswordEncryptor spe=new StrongPasswordEncryptor();
-			String spass=spe.encryptPassword(password);
+			StandardPBEStringEncryptor spe=new StandardPBEStringEncryptor();
+			spe.setPassword(mpCryptoPassword);
+			String spass=spe.encrypt(password);
 			pst.setString(1,userName); 
 			pst.setString(2,email); 
 			pst.setString(3,spass); 
@@ -122,12 +132,19 @@ public class User{
 			pst.setString(1,email);
 			ResultSet rs = pst.executeQuery();
 			if(rs.next()){
+				StandardPBEStringEncryptor spe=new StandardPBEStringEncryptor();
+				spe.setPassword(mpCryptoPassword);
+				password=spe.decrypt(rs.getString(1));
+				con.close();
+				return password;
+				/*
 				password = rs.getString(1);
 				StrongTextEncryptor ste=new StrongTextEncryptor();
 				ste.setPassword(password);
 				password=ste.decrypt(password);
 				con.close();
 				return password;
+				*/
 			}
 			else{
 				return "noemail";		
