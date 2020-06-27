@@ -86,6 +86,12 @@
 																		</td>
 																</tr>
 																<tr>
+																		<td>Display Image:</td>
+																		<td>
+																				<input type="file" name="disp_img">
+																		</td>
+																</tr>
+																<tr>
 																		<td>Restaurant Image:</td>
 																		<td>
 																					<div id="box">
@@ -94,7 +100,7 @@
 																		</td>
 																</tr> 
 													<tr>
-															<%Integer oid= (Integer)request.getAttribute("oid");%>
+															<%Integer oid= (Integer)session.getAttribute("ownerId");%>
 															<td>Owner id:</td>
 															<td><input type="hidden" value="<%=oid%>"  name="ownerId" id="onwerId"/></td>
 													</tr>

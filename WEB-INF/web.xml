@@ -52,4 +52,13 @@
 	<url-pattern>/forget.do</url-pattern>
 </servlet-mapping>
 
+<servlet>
+	<servlet-name>app4</servlet-name>
+	<servlet-class>controllers.RestaurantServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>app4</servlet-name>
+	<url-pattern>/Restaurant.do</url-pattern>
+</servlet-mapping>
+
 </web-app>

@@ -29,7 +29,9 @@ import models.*;
 		request.getRequestDispatcher(nextPage).forward(request,response);
 	}
 		String ownerName=owner.getOwnerName();
+		Integer ownerId=owner.getOwnerId();
 		session.setAttribute("ownername",ownerName);
+		session.setAttribute("ownerId",ownerId);
 		System.out.println(ownerName+"inside ols");
 		request.getRequestDispatcher(nextPage).forward(request,response);
 
