@@ -61,4 +61,50 @@
 	<url-pattern>/Restaurant.do</url-pattern>
 </servlet-mapping>
 
+<servlet>
+	<servlet-name>app5</servlet-name>
+	<servlet-class>controllers.dashboardServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>app5</servlet-name>
+	<url-pattern>/dashboard.do</url-pattern>
+</servlet-mapping>
+
+<servlet>
+  <servlet-name>app6</servlet-name>
+  <servlet-class>controllers.ShowAddMenuServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>app6</servlet-name>
+  <url-pattern>/add_menu.do</url-pattern>
+</servlet-mapping>
+
+<servlet>
+  <servlet-name>app7</servlet-name>
+  <servlet-class>controllers.AddCategoryAServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>app7</servlet-name>
+  <url-pattern>/collect_category.do</url-pattern>
+</servlet-mapping>
+
+<servlet>
+  <servlet-name>app8</servlet-name>
+  <servlet-class>controllers.GetItemServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>app8</servlet-name>
+  <url-pattern>/collect_item.do</url-pattern>
+</servlet-mapping>
+
+<servlet>
+  <servlet-name>app9</servlet-name>
+  <servlet-class>controllers.SaveMenuServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>app9</servlet-name>
+  <url-pattern>/save_menu.do</url-pattern>
+</servlet-mapping>
+
+
 </web-app>

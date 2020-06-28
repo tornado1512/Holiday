@@ -17,6 +17,10 @@ public class RestRegister{
 	public RestRegister(){
 
     }
+	public RestRegister(String restName ,String dispImg ){
+		this.restName=restName;
+		this.dispImg=dispImg;
+    }
     public RestRegister(String restName ,String restAddress, String restContact,Integer ownerId,City city,String opTime,String clTime,String dispImg ){
 		this.restName=restName;
 		this.restAddress=restAddress;
@@ -115,6 +119,27 @@ public class RestRegister{
 		}
 		return rests;
     }
+
+	public static ArrayList<RestRegister> collectRest2(Integer id){
+		ArrayList<RestRegister> rests=new ArrayList<RestRegister>();
+		try{
+		Class.forName("com.mysql.jdbc.Driver");
+		Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/minor?user=root&password=1234");
+		String query="select rest_name,disp_img from rest_registers where owner_id=?";
+		PreparedStatement pst=con.prepareStatement(query);
+		pst.setInt(1,id);
+		ResultSet rs=pst.executeQuery();
+		while(rs.next()){
+			RestRegister rest=new RestRegister(rs.getString("rest_name"),rs.getString("disp_img"));
+			rests.add(rest);
+			}
+		}
+		catch (ClassNotFoundException|SQLException e){
+			e.printStackTrace();
+		}
+		return rests;
+    }
+
 	public static RestRegister collectRest(Integer restRegisterId){
 		RestRegister rest=null;
 		try{

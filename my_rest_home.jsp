@@ -31,7 +31,7 @@
 			<h1 id="data"><span id="data2" class="color-change">Welcome To Your Restautrant Page</span></br></br>
 			<% String ownerName=(String)session.getAttribute("ownername");%>
 			 RESTAURANT OWNER - <%=ownerName%> <h1>
-			<a href="#" class="btn btn-full">View Your Restaurant</a>
+			<a href="dashboard.do" class="btn btn-full">View Your Restaurant</a>
 			<a href="rest_register.jsp" class="btn btn-nav">Add New Restaurant</a>
 			</div>
 
