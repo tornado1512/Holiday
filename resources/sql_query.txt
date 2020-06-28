@@ -43,6 +43,8 @@ opTime varchar(20) not null,
 
 clTime varchar(20) not null,
 
+disp_img varchar(100) not null,
+
 constraint fk_rest_registers_owners foreign key (owner_id) references owners (owner_id),
 constraint fk_rest_registers_cities foreign key (city_id) references cities (city_id)
 );
