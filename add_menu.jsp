@@ -37,9 +37,7 @@
 
 			<a href="#" class="btn btn-full"><span id="add">ADD MENU</span></a>
 			<a href="show_menu.jsp" class="btn btn-nav">VIEW EXISTING MENU</a>
-			</div>
 
-			
 
 			<div id="menu_box" style="visibility:hidden;" >
 				<table  id="form1" >
@@ -75,7 +73,7 @@
 
 
 
-
+			</div>
 
 		</header>
 
