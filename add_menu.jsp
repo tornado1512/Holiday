@@ -40,6 +40,14 @@
 			<% String restName=(String)session.getAttribute("restName");%>
 			<h2> Restaurant Name - <%=restName%> <h2></br>
 
+
+			<h1 id="data"><span id="data2" class="color-change">Welcome To Restautrant MENU</span></br></br>
+			<!--
+			<% Integer ownerId=(Integer)session.getAttribute("ownerId");%>
+			<h2>ownerId<%=ownerId%> <h2>
+			<%= session.getId()%></br>
+			-->
+
 			<a href="#" class="btn btn-full"><span id="add">ADD MENU</span></a>
 			<a href="view_menu.do" class="btn btn-nav">VIEW EXISTING MENU</a>
 

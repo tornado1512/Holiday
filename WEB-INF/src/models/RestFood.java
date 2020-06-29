@@ -1,16 +1,21 @@
 package models;
-
+import java.util.ArrayList;
 import java.sql.*;
 public class RestFood{
 	private Integer restFoodId;
 	private RestCategory restCategoryId;
 	private Food foodId;
 	private Integer foodPrice;
+	private String tempFoodName;
 
 	public RestFood(RestCategory restCategoryId, Food foodId, Integer foodPrice){
 		this.restCategoryId=restCategoryId;
 		this.foodId=foodId;
 		this.foodPrice=foodPrice;
+	}
+	public RestFood(String tempFoodName, Integer foodPrice){
+		this.foodPrice=foodPrice;
+		this.tempFoodName=tempFoodName;
 	}
 
 	public boolean saveFood(){
@@ -73,5 +78,31 @@ public class RestFood{
 	public Integer getFoodPrice(){
 		return foodPrice;
 	}
+	public void setTempFoodName( String tempFoodName){
+			this.tempFoodName=tempFoodName;
+	}
+	public String getTempFoodName(){
+		return tempFoodName;
+	}
+	
+	public static ArrayList<RestFood> collectMenu(int id){
+		ArrayList<RestFood> menus=new ArrayList<RestFood>();
+		try{
+		Class.forName("com.mysql.jdbc.Driver");
+		Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/minor?user=root&password=1234");
+		String query="select food_name,food_price from rest_foods natural join foods where rest_category_id=(select rest_category_id from rest_categories where rest_register_id=?) ";
+		PreparedStatement pst=con.prepareStatement(query);
+		pst.setInt(1,id);
+		ResultSet rs=pst.executeQuery();
+		while(rs.next()){
+			RestFood menu=new RestFood(rs.getString("food_name"),rs.getInt("food_price"));
+			menus.add(menu);
+			}
+		}
+		catch (ClassNotFoundException|SQLException e){
+			e.printStackTrace();
+		}
+		return menus;
+    }
 
 }
