@@ -24,7 +24,7 @@
 							<li><a href="#"><b>ABOUT</b></a></li>
 							<li><a href="#"><b>EXPLORE</b></a></li>
 							<li><a href="#"><b>RESTAURANT</b></a></li>
-							<li><a href="#"><b>SIGNIn</b></a></li>
+							<li><a href="logout.do"><b>LOGOUT</b></a></li>
 						</ul>
 						<a href="#" class="mobile-icon" onclick="slideshow()"><i class="fa fa-bars"></i></a>
 				</div>
@@ -39,6 +39,7 @@
 					<img src="<%=rs.getDispImg()%>" alt="display_image" width="600" height="400">
 				  </a>
 				  <div class="desc"><a href="add_menu.jsp"><%=rs.getRestName() %></a></div> 
+				  <%session.setAttribute("restName",rs.getRestName());%>
 			</div>
 			<%}%>
 			

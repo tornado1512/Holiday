@@ -7,7 +7,13 @@
 	cursor:pointer;
 	border-radius:4px;
 }*/
-
+td{
+	font-size:17px;
+}
+input{
+	border:2px solid black;
+	border-radius:3px;
+}
 #aaa{
 	border: 1px solid green;
 	border-radius:4px;
@@ -24,4 +30,7 @@
 #aaa th,#aaa td{
 		border: 1px solid blue;
 	border-collapse: collapse;
+}
+h2{
+	font-size:18px;
 }

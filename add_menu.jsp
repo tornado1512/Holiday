@@ -30,13 +30,18 @@
 			</nav>
 			
 			<div class="main-content-header">
-			<h1 id="data"><span id="data2" class="color-change">Welcome To Restautrant MENU</span></br></br>
-			<% Integer ownerId=(Integer)session.getAttribute("ownerId");%>
+			<h1 id="data"><span id="data2" class="color-change">Welcome To Restautrant MENU</span></br>
+			
+			<!--<% Integer ownerId=(Integer)session.getAttribute("ownerId");%>
 			<h2>ownerId<%=ownerId%> <h2>
-			<%= session.getId()%></br>
+			<%= session.getId()%>-->
+			<% String ownerName=(String)session.getAttribute("ownername");%>
+			<h2> Restaurant ownerName - <%=ownerName%> <h2>
+			<% String restName=(String)session.getAttribute("restName");%>
+			<h2> Restaurant Name - <%=restName%> <h2></br>
 
 			<a href="#" class="btn btn-full"><span id="add">ADD MENU</span></a>
-			<a href="show_menu.jsp" class="btn btn-nav">VIEW EXISTING MENU</a>
+			<a href="view_menu.do" class="btn btn-nav">VIEW EXISTING MENU</a>
 
 
 			<div id="menu_box" style="visibility:hidden;" >

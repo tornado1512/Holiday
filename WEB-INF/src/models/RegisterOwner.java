@@ -15,7 +15,7 @@ public class RegisterOwner{
 
 	public RegisterOwner(){
 	
-	}	
+	}		
 	public RegisterOwner(String ownerName,String email,String password){
 		this.ownerName=ownerName;
 		this.email=email;
@@ -180,3 +180,4 @@ public class RegisterOwner{
 		}
 		return flag;
 	}
+}
