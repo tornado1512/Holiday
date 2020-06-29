@@ -100,14 +100,14 @@ public class RestRegister{
 		return restRegisterId;
 	}
 
-	public static ArrayList<RestRegister> collectRest(City city){
+	public static ArrayList<RestRegister> collectRest(Integer city_id){
 		ArrayList<RestRegister> rests=new ArrayList<RestRegister>();
 		try{
 		Class.forName("com.mysql.jdbc.Driver");
 		Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/minor?user=root&password=1234");
 		String query="select * from rest_registers where city_id=?";
 		PreparedStatement pst=con.prepareStatement(query);
-		pst.setInt(1,city.getCityId());
+		pst.setInt(1,city_id);
 		ResultSet rs=pst.executeQuery();
 		while(rs.next()){
 			RestRegister rest=new RestRegister(rs.getInt("rest_register_id"),rs.getString("rest_name"),rs.getString("rest_address"),rs.getString("rest_contact"),rs.getInt("owner_id"),new City(rs.getInt("city_id")),rs.getString("opTime"),rs.getString("clTime"),rs.getString("disp_img"));

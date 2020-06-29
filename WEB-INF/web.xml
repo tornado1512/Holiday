@@ -105,6 +105,14 @@
   <servlet-name>app9</servlet-name>
   <url-pattern>/save_menu.do</url-pattern>
 </servlet-mapping>
+<servlet>
+  <servlet-name>app12</servlet-name>
+  <servlet-class>controllers.ViewMenuServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>app12</servlet-name>
+  <url-pattern>/view_menu.do</url-pattern>
+</servlet-mapping>
 
 
 </web-app>

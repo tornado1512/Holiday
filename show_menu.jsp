@@ -1,4 +1,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@page import="java.util.ArrayList"%>
+<%@page import="models.*"%>
 <!doctype html>
 <html lang="en">
  <head>
@@ -30,45 +32,27 @@
 			</nav>
 			
 			<div class="main-content-header">
-			<h1 id="data"><span id="data2" class="color-change">Welcome To Restautrant MENU</span></br></br>
-			<!--
-			<% Integer ownerId=(Integer)session.getAttribute("ownerId");%>
-			<h2>ownerId<%=ownerId%> <h2>
-			<%= session.getId()%></br>
-			-->
-			<a href="#" class="btn btn-full"><span id="add">ADD MENU</span></a>
-			<a href="view_menu.do" class="btn btn-nav">VIEW EXISTING MENU</a>
+			<h1 id="data"><span id="data2" class="color-change">WELCOME TO MY MENU</span></br></br>
+		
 
-
-			<div id="menu_box" style="visibility:hidden;" >
-				<table  id="form1" >
-						<thead>
-							<th>Categories</th>
-							<th>Select</th>
-						</thead>
-						<tbody id="rec">
-							
-						</tbody>
-						<tr>
-						  <td colspan="2"><input type="button" value="Choose"  id="chsbtn"/></td>
-						 </tr>
-				</table>
-		</div>
-		<div  id="item_box" style="visibility:hidden;">
-			<form action="save_menu.do" method="get">	
-				<table   id="bbb" >
+		<div  id="item_box" >	
+				<table  >
 					<thead>
 						<tr>
 							<th>Food Items</th>
 							<th>Price</th>
 						</tr>
 						</thead>
-						<tbody id="rec2">
-							
+						<tbody >
+							<%ArrayList<RestFood> menus=(ArrayList)request.getAttribute("menus");%>
+							<%for(RestFood menu:menus){%>
+							<tr>
+								<td><%=menu.getTempFoodName()%></td>
+								<td><%=menu.getFoodPrice()%></td>
+							</tr>
+							<%}%>
 						</tbody>
-						<tr>
-							<td colspan="2"><input type="submit" value="Save Menu" /></td>
-						 </tr>
+						
 				</table>
 		</div>
 
