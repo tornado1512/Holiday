@@ -28,8 +28,8 @@
 			<div class="main-content-header">
 			<h1 id="data"><span id="data2" class="color-change">EXPLORE RESTAURANTS IN VARIOUS CITIES!!!</span></br></br>
 					<div id="box">
-						<form method="post" action="collect_rest.do" id="form1">
-							<input type="text"  id = "fld" /><button style="font-size:17px" form="form1" type="submit" value="submit"><i class="fa fa-search"></i></button>
+						<form method="Post" action="collect_rest.do" id="form1">
+							<input type="text"  id = "fld" name="ct_name" /><button style="font-size:17px" form="form1" type="submit" value="submit"><i class="fa fa-search"></i></button>
 							<!--<i class="fa fa-search"><input type="submit" style="font-size:17px"></i>-->
 						</form>
 					<div id="records"></div>
