@@ -133,6 +133,28 @@
 	<url-pattern>/collect_records.do</url-pattern>
   </servlet-mapping>
 
+  <servlet>
+	<servlet-name>app13</servlet-name>
+	<servlet-class>controllers.CollectRestServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+	<servlet-name>app13</servlet-name>
+	<url-pattern>/collect_rest.do</url-pattern>
+  </servlet-mapping>
+
+<servlet>
+	<servlet-name>app14</servlet-name>
+	<servlet-class>controllers.CollectCategRestServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+	<servlet-name>app14</servlet-name>
+	<url-pattern>/categ.do</url-pattern>
+  </servlet-mapping>
+
+
+
 
 
 </web-app>

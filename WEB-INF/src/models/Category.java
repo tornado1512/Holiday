@@ -32,6 +32,7 @@ public class Category{
 	}
 	
 	public void setCategoryId(Integer categoryId){
+
 			this.categoryId=categoryId;
 	}
 	
