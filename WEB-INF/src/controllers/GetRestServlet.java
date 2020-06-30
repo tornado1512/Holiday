@@ -11,10 +11,10 @@ public class GetRestServlet extends HttpServlet{
 	HttpSession session = request.getSession();
 	String nextPage="allRest.jsp";
 	
-	String city_id=request.getParameter("ct_id");
-	ArrayList<RestRegister> rests=collectRest(city_id);
+	/*Integer city_id=request.getParameter("ct_id");
+	ArrayList<RestRegister> rests=RestRegister.collectRest(city_id);
 	
-	request.setAttribute("rests",rests);
+	request.setAttribute("rests",rests);*/
 	request.getRequestDispatcher(nextPage).forward(request,response);	
 	}
 	

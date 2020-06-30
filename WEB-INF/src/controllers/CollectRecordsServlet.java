@@ -14,6 +14,7 @@ public class CollectRecordsServlet extends HttpServlet{
 		String city = request.getParameter("city");
 		
 		ArrayList<City> cities = City.collectCities(city);
+
 		Gson gson = new Gson();
 		String jsonStr = gson.toJson(cities);
 		response.getWriter().write(jsonStr);

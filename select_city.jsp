@@ -6,7 +6,7 @@
  <link href="http://fonts.googleapis.com/css?family=Flamenco" rel="stylesheet">
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
  </head>
  <body>
 		<header>
@@ -27,9 +27,11 @@
 			
 			<div class="main-content-header">
 			<h1 id="data"><span id="data2" class="color-change">EXPLORE RESTAURANTS IN VARIOUS CITIES!!!</span></br></br>
-			
 					<div id="box">
-					<input type="text"  id = "fld" />
+						<form method="post" action="collect_rest.do" id="form1">
+							<input type="text"  id = "fld" /><button style="font-size:17px" form="form1" type="submit" value="submit"><i class="fa fa-search"></i></button>
+							<!--<i class="fa fa-search"><input type="submit" style="font-size:17px"></i>-->
+						</form>
 					<div id="records"></div>
 					</div>
 					<div id="details"></div>

@@ -25,7 +25,7 @@ function collectRecords(){
 	details.innerHTML = ' ';
 	details.style.display = 'none';
 	
-	if(fld.value.length>2){
+	if(fld.value.length>1){
 		req = new XMLHttpRequest();
 
 		req.open('get','collect_records.do?city='+fld.value,true);
@@ -51,7 +51,7 @@ function showRecords(){
 		for(i=0;i<len;i++){
 			var elm = document.createElement('div');
 			elm.className = 'rec';
-			elm.innerHTML = arr[i]['city'];
+			elm.innerHTML = arr[i]['cityName'];
 			elm.ctid = arr[i]['cityId']
 
 			elm.onmouseover = function(){ this.className = 'rec over'; }; 
@@ -87,9 +87,3 @@ function showDetails(){
 		details.style.display = 'block';
 	}
 }
-
-
-
-
-
-

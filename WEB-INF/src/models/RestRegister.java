@@ -140,7 +140,7 @@ public class RestRegister{
 		return rests;
     }
 
-	public static RestRegister collectRest(Integer restRegisterId){
+	public static RestRegister collectRest3(Integer restRegisterId){
 		RestRegister rest=null;
 		try{
 		Class.forName("com.mysql.jdbc.Driver");

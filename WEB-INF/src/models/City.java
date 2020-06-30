@@ -93,7 +93,7 @@ public class City{
 
 							Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/minor?user=root&password=1234");
 
-							String query = "select city_id,city_name from cities where city like '"+ct+"%'";
+							String query = "select city_id,city_name from cities where city_name like '"+ct+"%'";
 
 							PreparedStatement pst = con.prepareStatement(query);
 
