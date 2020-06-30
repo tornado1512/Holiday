@@ -13,6 +13,9 @@ public class RestFood{
 		this.foodId=foodId;
 		this.foodPrice=foodPrice;
 	}
+	public RestFood(){
+
+	}
 	public RestFood(String tempFoodName, Integer foodPrice){
 		this.foodPrice=foodPrice;
 		this.tempFoodName=tempFoodName;
@@ -90,7 +93,7 @@ public class RestFood{
 		try{
 		Class.forName("com.mysql.jdbc.Driver");
 		Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/minor?user=root&password=1234");
-		String query="select food_name,food_price from rest_foods natural join foods where rest_category_id=(select rest_category_id from rest_categories where rest_register_id=?) ";
+		String query="select food_name,food_price from rest_foods natural join foods where rest_category_id IN(select rest_category_id from rest_categories where rest_register_id=?); ";
 		PreparedStatement pst=con.prepareStatement(query);
 		pst.setInt(1,id);
 		ResultSet rs=pst.executeQuery();

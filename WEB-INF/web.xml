@@ -153,6 +153,16 @@
 	<url-pattern>/categ.do</url-pattern>
   </servlet-mapping>
 
+  <servlet>
+	<servlet-name>app15</servlet-name>
+	<servlet-class>controllers.ViewMoreServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+	<servlet-name>app15</servlet-name>
+	<url-pattern>/view_more.do</url-pattern>
+  </servlet-mapping>
+
 
 
 

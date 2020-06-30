@@ -6,6 +6,9 @@ public class RestPic {
 	private String picPath;
 	private RestRegister restRegisterId;
 
+	public RestPic(){
+		
+	}
 	
 	public RestPic(String picPath,RestRegister restRegisterId){
 		this.picPath=picPath;

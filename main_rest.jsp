@@ -1,4 +1,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@page import="models.*"%>
+<%@page import="java.util.*"%>
 <!doctype html>
 <html lang="en">
  <head>
@@ -28,6 +30,10 @@
 						<a href="#" class="mobile-icon" onclick="slideshow()"><i class="fa fa-bars"></i></a>
 				</div>
 			</nav>
+			<%RestRegister rr=(RestRegister)session.getAttribute("records");%>
+			<%ArrayList<RestFood> menu=(ArrayList)session.getAttribute("menu");%>
+			<%ArrayList<String> path=(ArrayList)session.getAttribute("path");%>
+			
 			<div class="display-content">
 						<section class="text-gray-700 body-font">
 							  <div class="container px-5 py-24 mx-auto flex flex-wrap" id="top-div">
@@ -39,7 +45,7 @@
 								<div class="flex flex-wrap md:-m-2 -m-1">
 								  <div class="flex flex-wrap w-1/2">
 									<div class="md:p-2 p-1 w-1/2">
-									  <img alt="gallery" class="w-full object-cover h-full object-center block" src="images/discover.jpg">
+									  <img alt="gallery" class="w-full object-cover h-full object-center block" src="   ">
 									</div>
 									<div class="md:p-2 p-1 w-1/2">
 									  <img alt="gallery" class="w-full object-cover h-full object-center block" src="images/Theme.jpg">
@@ -67,9 +73,10 @@
 						<section class="text-gray-500 bg-gray-900 body-font overflow-hidden">
 									  <div class="container px-5 py-24 mx-auto">
 										<div class="lg:w-4/5 mx-auto flex flex-wrap">
-										  <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="images/discover.jpg">
+										  <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" id="pic"
+										  src="<%= rr.getDispImg()%> ">
 										  <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
-											<h1 class="text-white text-3xl title-font font-medium mb-1">The Catcher in the Rye</h1>
+											<h1 class="text-white text-3xl title-font font-medium mb-1">Details Of <%= rr.getRestName()%></h1>
 											<div class="flex mb-4">
 											  <!--<span class="flex items-center">
 												<svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 text-indigo-500" viewBox="0 0 24 24">
@@ -108,10 +115,11 @@
 											  </span>
 											</div>
 											<div class="flex mt-6 items-center pb-5 border-b-2 border-gray-800 mb-5">
-											  
-											  
-
-
+											 <h2>1.RestaurantName - <%= rr.getRestName()%></br>
+												2.Address - <%= rr.getRestAddress()%></br>
+												3.Contact - <%= rr.getRestContact()%></br>
+												4.OpeningTime - <%= rr. getOpTime()%></br>
+												 5.ClosingTime - <%= rr.getClTime()%></br></h2>
 											</div>
 											<div class="flex">
 											  <button class="flex ml-auto text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">ORDER FOOD</button>
@@ -125,26 +133,28 @@
 									<section class="text-gray-700 body-font" id="last-section">
 										  <div class="container px-5 py-24 mx-auto">
 											<div class="flex flex-col text-center w-full mb-20">
-											  <h1 class="sm:text-4xl text-3xl font-medium title-font mb-2 text-gray-900">Pricing</h1>
+											  <h1 class="sm:text-4xl text-3xl font-medium title-font mb-2 text-gray-900">MENU CARD</h1>
 											</div>
 											<div class="lg:w-2/3 w-full mx-auto overflow-auto" id="table-div">
 											  <table class="table-auto w-full text-left whitespace-no-wrap">
 												<thead>
 												  <tr>
-													<th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-200 rounded-tl rounded-bl">Plan</th>
-													<th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-200">Price</th>
+													<th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-200 rounded-tl rounded-bl">FOOD ITEMS</th>
+													<th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-200">PRICE</th>
 													<th class="w-10 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-200 rounded-tr rounded-br"></th>
 												  </tr>
 												</thead>
 												<tbody>
+											<%for(RestFood rf:menu){%>
 												  <tr>
-													<td class="px-4 py-3">Start</td>
-													<td class="px-4 py-3 text-lg text-gray-900">Free</td>
+													<td class="px-4 py-3"><%=rf. getTempFoodName()%></td>
+													<td class="px-4 py-3 text-lg text-gray-900"><%=rf. getFoodPrice()%></td>
 													<td class="w-10 text-center">
 													  <input name="plan" type="radio">
 													</td>
 												  </tr>
-												  <tr>
+											<%}%>
+												 <!-- <tr>
 													<td class="border-t-2 border-gray-200 px-4 py-3">Pro</td>
 													<td class="border-t-2 border-gray-200 px-4 py-3 text-lg text-gray-900">$24</td>
 													<td class="border-t-2 border-gray-200 w-10 text-center">
@@ -164,12 +174,12 @@
 													<td class="border-t-2 border-b-2 border-gray-200 w-10 text-center">
 													  <input name="plan" type="radio">
 													</td>
-												  </tr>
+												  </tr>-->
 												</tbody>
 											  </table>
 											</div>
 											<div class="flex pl-4 mt-4 lg:w-2/3 w-full mx-auto">
-											  <button class="flex ml-auto text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">ORDER FOD</button>
+											  <button class="flex ml-auto text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">ORDER FOOD</button>
 											</div>
 										 </div>
 										</section>
@@ -188,6 +198,7 @@
 					}
 				}
  </script>
+ <script src="js/main_rest.js"></script>
 	<c:import url="footer.jsp" />
  </body>
 </html>
