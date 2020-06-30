@@ -128,8 +128,7 @@
 	<servlet-name>app12</servlet-name>
 	<servlet-class>controllers.CollectRecordsServlet</servlet-class>
   </servlet>
-
-  <servlet-mapping>
+ <servlet-mapping>
 	<servlet-name>app12</servlet-name>
 	<url-pattern>/collect_records.do</url-pattern>
   </servlet-mapping>
