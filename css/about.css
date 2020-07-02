@@ -6,7 +6,7 @@
 body{
 	font-size:20px;
 	overflow-x:hidden;
-	color:white;
+	color:black;
 	font-family: 'Flamenco', cursive;
 }
 .clearfix:after{
@@ -77,7 +77,7 @@ h1{
 #data2{
 	font-size:55px;
 }
-.btn{
+/*.btn{
 	display: inline-block;
 	padding: 10px;
 	font-weight: lighter;
@@ -94,7 +94,7 @@ h1{
 }
 .btn-full:hover{
 	background-color:#ff66cc;
-}
+}*/
 .btn-nav{
 	background-color: transparent;
 	color:black;
@@ -160,7 +160,54 @@ color:black;
 	padding:10px;
 	
 }
-
+.section1{
+	/*border:2px solid red;*/
+	height:420px;
+}
+.section2{
+	/*border:2px solid red;*/
+	height:520px;
+	color:black;
+}
+.div1{
+	/*border:2px solid black;*/
+	margin-top:-90px;
+}
+#p{
+	font-size:30px;
+	font-weight:bold;
+}
+#p1{
+	font-size:30px;
+	color:black;
+	font-weight:bold;
+}
+p{
+	color:black;
+	font-weight:bold;
+}
+.section3-div1{
+	border:2px solid white;
+	height:200;
+	margin-top:40px;
+	margin-left:200px;
+	border-radius:5px;
+}
+.section3-div2{
+	border:2px solid white;
+	height:200;
+	margin-top:40px;
+	margin-left:5px;
+	border-radius:5px;
+}
+.disp{
+	margin-top:-25px;
+	background-color:white;
+	opacity:0.7;
+}
+.info{
+	color:white;
+}
 @media only screen and (max-width: 480px){
 	.btn-full{
 		margin-bottom: 20px;

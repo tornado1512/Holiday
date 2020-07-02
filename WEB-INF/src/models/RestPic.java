@@ -36,7 +36,7 @@ public class RestPic {
 		try{
 			Class.forName("com.mysql.jdbc.Driver");
 			Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/minor?user=root&password=1234");
-			String query="select pic_path from package_pics where package_id=?";
+			String query="select pic_path from rest_pics where rest_register_id=?";
 			PreparedStatement pst=con.prepareStatement(query);
 			
 			pst.setInt(1,restRegisterId);  
