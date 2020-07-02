@@ -51,6 +51,26 @@ public class RestPic {
 		}
 		return pics;
 	}
+	public static ArrayList collectRestPics(Integer restRegisterId){
+		ArrayList <String> pics= new ArrayList<String>(); 
+		try{
+			Class.forName("com.mysql.jdbc.Driver");
+			Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/minor?user=root&password=1234");
+			String query="select pic_path from rest_pics where rest_register_id=?";
+			PreparedStatement pst=con.prepareStatement(query);
+			
+			pst.setInt(1,restRegisterId);  
+			ResultSet rst =pst.executeQuery();
+			while(rst.next()){
+				pics.add(rst.getString(1));
+			}
+			con.close();
+		}
+		catch (ClassNotFoundException | SQLException e){
+			e.printStackTrace();
+		}
+		return pics;
+	}
 
 	public void setRestPicId(Integer restPicId){
 		this.restPicId=restPicId;

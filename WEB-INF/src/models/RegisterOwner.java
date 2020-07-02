@@ -21,6 +21,10 @@ public class RegisterOwner{
 		this.email=email;
 		this.password=password;
 	}
+	public RegisterOwner(int ownerId){
+		this.ownerId=ownerId;
+		
+	}
 	public RegisterOwner(String email){
 		this.email=email;
 	}
@@ -68,6 +72,23 @@ public class RegisterOwner{
 			}
 			return  ownerName;
 	}
+	public String getOwnerName2(){
+		try{
+				Class.forName("com.mysql.jdbc.Driver");
+				Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/minor?user=root&password=1234");
+				String query="select owner_name from owners where owner_id=? ";
+				PreparedStatement pst = con.prepareStatement(query);
+				pst.setInt(1,ownerId);
+				ResultSet rs = pst.executeQuery();
+				rs.next();
+				ownerName = rs.getString(1);
+				con.close();
+			}catch(ClassNotFoundException | SQLException e){
+					e.printStackTrace();
+			}
+			return  ownerName;
+	}
+
 
 	public void setEmail(String email){
 			this.email=email;

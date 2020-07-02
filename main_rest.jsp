@@ -45,24 +45,24 @@
 								<div class="flex flex-wrap md:-m-2 -m-1">
 								  <div class="flex flex-wrap w-1/2">
 									<div class="md:p-2 p-1 w-1/2">
-									  <img alt="gallery" class="w-full object-cover h-full object-center block" src="   ">
+									  <img alt="gallery" class="w-full object-cover h-full object-center block image" src="<%= path.get(0)%>" >
 									</div>
 									<div class="md:p-2 p-1 w-1/2">
-									  <img alt="gallery" class="w-full object-cover h-full object-center block" src="images/Theme.jpg">
+									  <img alt="gallery" class="w-full object-cover h-full object-center block image" src="<%= path.get(0)%>">
 									</div>
 									<div class="md:p-2 p-1 w-full">
-									  <img alt="gallery" class="w-full h-full object-cover object-center block" src="images/theme3.jpg">
+									  <img alt="gallery" class="w-full h-full object-cover object-center block image" src="<%= path.get(0)%>">
 									</div>
 								  </div>
 								  <div class="flex flex-wrap w-1/2">
 									<div class="md:p-2 p-1 w-full">
-									  <img alt="gallery" class="w-full h-full object-cover object-center block" src="images/theme2.jpg">
+									  <img alt="gallery" class="w-full h-full object-cover object-center block image " src="<%= path.get(0)%>">
 									</div>
 									<div class="md:p-2 p-1 w-1/2">
-									  <img alt="gallery" class="w-full object-cover h-full object-center block" src="images/Bookj.jpg">
+									  <img alt="gallery" class="w-full object-cover h-full object-center block" src="images/Bookj.jpg"class="image">
 									</div>
 									<div class="md:p-2 p-1 w-1/2">
-									  <img alt="gallery" class="w-full object-cover h-full object-center block" src="images/logo5.jpg">
+									  <img alt="gallery" class="w-full object-cover h-full object-center block" src="images/logo5.jpg" class="image">
 									</div>
 								  </div>
 								</div>
@@ -73,7 +73,7 @@
 						<section class="text-gray-500 bg-gray-900 body-font overflow-hidden">
 									  <div class="container px-5 py-24 mx-auto">
 										<div class="lg:w-4/5 mx-auto flex flex-wrap">
-										  <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" id="pic"
+										  <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded image" id="pic"
 										  src="<%= rr.getDispImg()%> ">
 										  <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
 											<h1 class="text-white text-3xl title-font font-medium mb-1">Details Of <%= rr.getRestName()%></h1>
@@ -199,6 +199,7 @@
 				}
  </script>
  <script src="js/main_rest.js"></script>
+ <script src="js/rest_gallery.js"></script>
 	<c:import url="footer.jsp" />
  </body>
 </html>

@@ -28,8 +28,8 @@ import models.*;
 				request.setAttribute(message,"message");
 				request.getRequestDispatcher(nextPage).forward(request,response);
 			}
-			String ownerName=owner.getOwnerName();
-			session.setAttribute("ownername",ownerName);
+			//String ownerName=owner.getOwnerName();
+			//session.setAttribute("ownername",ownerName);
 			//System.out.println(ownerName+"inside ols");
 			request.getRequestDispatcher(nextPage).forward(request,response);
 

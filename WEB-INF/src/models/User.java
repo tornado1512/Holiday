@@ -3,7 +3,7 @@ import java.sql.*;
 //import org.jasypt.util.password.StrongPasswordEncryptor;
 //import org.jasypt.util.text.StrongTextEncryptor;
 import org.jasypt.encryption.pbe.StandardPBEStringEncryptor;
-
+import java.util.*;
 public class User{
 	private Integer userId;
 	private String userName;
@@ -19,6 +19,12 @@ public class User{
 		this.userName=userName;
 		this.email=email;
 		this.password=password;
+	}
+	public User(int userId,String userName,String email){
+		this.userName=userName;
+		this.email=email;
+		this.userId=userId;
+		
 	}
 	public User(String email){
 		this.email=email;
@@ -154,4 +160,23 @@ public class User{
 		}
 		return "noemail";	
 	}
+	public static  ArrayList<User> collectUser(){
+		ArrayList<User> users=new ArrayList<User>();
+		try{
+				Class.forName("com.mysql.jdbc.Driver");
+				Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/minor?user=root&password=1234");
+				String query="select * from users ";
+				PreparedStatement pst = con.prepareStatement(query);
+				//pst.setString(1,email);
+				ResultSet rs = pst.executeQuery();
+				while(rs.next()){
+					users.add(new User(rs.getInt(1),rs.getString(2),rs.getString(3)));
+				}
+				con.close();
+			}catch(ClassNotFoundException | SQLException e){
+					e.printStackTrace();
+			}
+		return  users;
+	}
+
 }

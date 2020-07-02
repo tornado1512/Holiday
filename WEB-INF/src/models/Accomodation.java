@@ -1,7 +1,7 @@
 package models;
 
 import java.sql.*;
-
+import java.util.*;
 public class Accomodation{
 	private Integer accomodationId;
 	private String accomodationName;
@@ -23,7 +23,14 @@ public class Accomodation{
 		this.cityId=cityId;
 
 	}
-	public Accomodation collectAccomodation(){
+
+	public Accomodation(Integer accomodationId,String accomodationName,City cityId){
+		this.accomodationId=accomodationId;
+		this.accomodationName=accomodationName;
+		this.cityId=cityId;
+
+	}
+public Accomodation collectAccomodation(){
 		Accomodation accomodation = null;
 		try{
 			Class.forName("com.mysql.jdbc.Driver");
@@ -41,6 +48,26 @@ public class Accomodation{
 		}
 		return accomodation;
 	}
+	public static ArrayList<Accomodation> collectHotel(){
+		ArrayList<Accomodation> acc=new ArrayList<Accomodation>();
+		try{
+			Class.forName("com.mysql.jdbc.Driver");
+			Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/minor?user=root&password=1234");
+			String query="select * from accomodations ";
+			PreparedStatement pst=con.prepareStatement(query);
+			ResultSet rst=pst.executeQuery();
+			if(rst.next()){
+				Accomodation accomodation= new Accomodation(rst.getInt(1),rst.getString(2),new City(rst.getInt("city_id")));
+				acc.add(accomodation);
+			}
+			//System.out.println("hello accomodation");
+		}
+		catch (ClassNotFoundException|SQLException e){
+			e.printStackTrace();
+		}
+		return acc;
+	}
+
 
 	public Accomodation(String accomodationName){
 		this.accomodationName=accomodationName;
@@ -114,4 +141,7 @@ public class Accomodation{
 	public String getAccomodationPicPath(){
 		return accomodationPicPath;
 	}
+	public City getCity(){
+		return cityId;
+	}	
 }

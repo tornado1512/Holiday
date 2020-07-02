@@ -40,6 +40,19 @@ public class City{
 		this.cityName=cityName;
 	}
 	public String getCityName(){
+		try{
+			Class.forName("com.mysql.jdbc.Driver");
+			Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/minor?user=root&password=1234");
+			String query = "select city_name from cities where city_id=?";
+			PreparedStatement pst=con.prepareStatement(query);
+			pst.setInt(1,cityId);
+			ResultSet rst=pst.executeQuery();
+			while(rst.next()){
+				cityName=rst.getString(1);
+			}
+		}catch(ClassNotFoundException|SQLException e){
+			e.printStackTrace();
+		}
 			return cityName;
 	}
 	public Integer getRecord(){

@@ -22,9 +22,11 @@ public class ViewMoreServlet extends HttpServlet{
 		session.setAttribute("menu",menu);
 
 		RestPic rp=new RestPic();
-		ArrayList<String> path= rp. collectPics(restId);
+		ArrayList<String> path= rp. collectRestPics(restId);
 
 		session.setAttribute("path",path);
+		//ArrayList<String> path=(ArrayList)session.getAttribute("path");
+		//System.out.println(path.get(0));
 
 		request.getRequestDispatcher("main_rest.jsp").forward(request,response);
 	}

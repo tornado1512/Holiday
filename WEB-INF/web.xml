@@ -162,7 +162,54 @@
 	<servlet-name>app15</servlet-name>
 	<url-pattern>/view_more.do</url-pattern>
   </servlet-mapping>
+<servlet>
+	<servlet-name>app16</servlet-name>
+	<servlet-class>controllers.AddPackageServlet</servlet-class>
+  </servlet>
 
+  <servlet-mapping>
+	<servlet-name>app16</servlet-name>
+	<url-pattern>/add_pack.do</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+	<servlet-name>app17</servlet-name>
+	<servlet-class>controllers.SaveAccomodationServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+	<servlet-name>app17</servlet-name>
+	<url-pattern>/save_accomodation.do</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+	<servlet-name>app18</servlet-name>
+	<servlet-class>controllers.AdminViewsServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+	<servlet-name>app18</servlet-name>
+	<url-pattern>/admin_views.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+	<servlet-name>app19</servlet-name>
+	<servlet-class>controllers.ShowPackServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+	<servlet-name>app19</servlet-name>
+	<url-pattern>/show_pack.do</url-pattern>
+  </servlet-mapping>
+
+<servlet>
+	<servlet-name>app20</servlet-name>
+	<servlet-class>controllers.PackageCategoryServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+	<servlet-name>app20</servlet-name>
+	<url-pattern>/pack_categ.do</url-pattern>
+  </servlet-mapping>
 
 
 

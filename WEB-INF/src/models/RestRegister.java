@@ -17,6 +17,7 @@ public class RestRegister{
 	public RestRegister(){
 
     }
+
 	public RestRegister(String restName ,String dispImg ){
 		this.restName=restName;
 		this.dispImg=dispImg;
@@ -41,6 +42,12 @@ public class RestRegister{
 		this.opTime=opTime;
 		this.clTime=clTime;
 		this.dispImg=dispImg;
+    }
+	public RestRegister(Integer restRegisterId , String restName ,Integer ownerId,City city){
+		this.restRegisterId = restRegisterId;
+		this.restName=restName;
+		this.ownerId=ownerId;
+		this.city=city;
     }
 	public RestRegister(String restName ,String restAddress, String restContact){
 		this.restName=restName;
@@ -179,6 +186,26 @@ public class RestRegister{
 		}
 		return rests;
     }
+	//for admin
+	public static ArrayList<RestRegister> collectRest5(){
+		ArrayList<RestRegister> rests=new ArrayList<RestRegister>();
+		try{
+			Class.forName("com.mysql.jdbc.Driver");
+			Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/minor?user=root&password=1234");
+			String query="select * from rest_registers ";
+			PreparedStatement pst=con.prepareStatement(query);
+			//pst.setInt(1,id);
+			ResultSet rs=pst.executeQuery();
+			while(rs.next()){
+			RestRegister rest=new RestRegister(rs.getInt("rest_register_id"),rs.getString("rest_name"),rs.getInt("owner_id"),new City(rs.getInt("city_id")));
+			rests.add(rest);
+			}
+		}
+		catch (ClassNotFoundException|SQLException e){
+			e.printStackTrace();
+		}
+		return rests;
+    }
 
 	
     public void setRestName(String restName){
@@ -223,5 +250,13 @@ public class RestRegister{
 	public String getDispImg(){
 		return dispImg;
 	}
-
+	public City getCity(){
+		return city;
+	}
+	public void setOwnerId(int ownerId){
+		this.ownerId=ownerId;
+	}
+	public int getOwnerId(){
+		return ownerId;
+	}
 }	

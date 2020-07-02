@@ -29,10 +29,11 @@ public class TypeCategory{
 		try{
 			Class.forName("com.mysql.jdbc.Driver");
 			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/minor?user=root&password=1234");
-			String query="select type_category_id from type_categories where type_category=? and package_category_id=?";
+			//String query="select type_category_id from type_categories where type_category=? and package_category_id=?";
+			String query="select type_category_id from type_categories where type_category=? ";
 			PreparedStatement pst=con.prepareStatement(query);
 			pst.setString(1,typeCategory);
-			pst.setInt(2,packageCategoryId.getPackageCategoryId());
+			//pst.setInt(2,packageCategoryId.getPackageCategoryId());
 			
 			ResultSet rst=pst.executeQuery();
 			rst.next();
@@ -49,6 +50,25 @@ public class TypeCategory{
 		this.typeCategory=typeCategory;
 	}
 	public String  getTypeCategory(){
+		try{
+			Class.forName("com.mysql.jdbc.Driver");
+			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/minor?user=root&password=1234");
+	
+			String query="select type_category from type_categories where type_category_id=? ";
+			PreparedStatement pst=con.prepareStatement(query);
+			pst.setInt(1,typeCategoryId);
+			ResultSet rst=pst.executeQuery();
+			while(rst.next()){
+				typeCategory=rst.getString(1);
+			}
+			con.close();
+			return typeCategory;
+		}
+		catch (ClassNotFoundException|SQLException e){
+			e.printStackTrace();		
+		}catch(Exception e){
+			e.printStackTrace();
+		}
 		return typeCategory;
 	}
 	public void setPackageCategoryId(PackageCategory  packageCategoryId){

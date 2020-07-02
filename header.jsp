@@ -30,6 +30,7 @@
 			We help you find the best places to travel,</br>shop, eat & drink across the world.</h1>
 			<a href="#" class="btn btn-full">Click to Explore</a>
 			<a href="select_city.jsp" class="btn btn-nav">Click for Restaurants</a>
+			<a href="show_pack.do" class="btn btn-nav">Click for Packages</a>
 			</div>
 
 		</header>
