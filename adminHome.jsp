@@ -36,7 +36,7 @@
 			<a href="admin_views.do?id=3" class="btn btn-full">View All Hotels</a>
 			<a href="admin_views.do?id=4" class="btn btn-full">View All Users</a>
 			<a href="add_accomodation.jsp" class="btn btn-nav">Add Hotels</a>
-			<a href="add_package.jsp" class="btn btn-nav">Add Hotels</a>
+			<a href="add_package.jsp" class="btn btn-nav">Add Package</a>
 			</div>
 		
 		</header>
