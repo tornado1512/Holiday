@@ -17,8 +17,8 @@ body{
 	clear: both;
 }
 header{
-	background-image:linear-gradient(rgba(105,105,105,0.4),rgba(105,105,105,0.4)),url("../images/theme3.jpg") ;
-	height:350vh;
+	background-image: linear-gradient(rgba(105,105,105,0.4),rgba(105,105,105,0.4)),url("../images/theme3.jpg") ;
+	height:100vh;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position:center;
@@ -103,9 +103,9 @@ h1{
 .btn-nav:hover{
 	background-color:#ff66cc;
 }
-.color-change{
+/*.color-change{
 	animation: colorchange 1s infinite;
-}
+}*/
 @keyframes  colorchange{
 	0%{color:#ff66cc;}
 	25%{color:#3366ff;}
@@ -143,24 +143,6 @@ h1{
 	}
 }
 
-.display-content{
-	width:auto;
-	height:200vh;
-	/*border:2px solid red;*/
-}
-.top-heading{
-color:black;
-	font-size:30px;
-	font-weight:bold;
-	font-family:cursive;
-	padding:50px;
-	margin-left:50px;
-}
-#top-div{
-	padding:10px;
-	
-}
-
 @media only screen and (max-width: 480px){
 	.btn-full{
 		margin-bottom: 20px;
@@ -168,11 +150,4 @@ color:black;
 	h1{
 		font-size: 160%;
 	}
-}
-#last-section{
-	color:black;
-	margin-top:-65px;
-}
-#table-div{
-	margin-top:-65px;
 }
