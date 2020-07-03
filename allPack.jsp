@@ -54,12 +54,12 @@
 			<%for(Packagee pack:packs){%>
 				<div class="p-4 lg:w-1/2" style="color:white;">
 					<div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
-					  <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4"  id="pic" src="<%=pack.getDispImg()%>">
+					  <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4 image"  src="<%=pack.getDispImg()%>">
 					  <div class="flex-grow sm:pl-8">
 						<h2 class="title-font font-medium text-lg text-gray-900" style="color:white;"><%=pack.getPackageName()%></h2>
 						<h3 class="text-gray-500 mb-3">No of Days:<%=pack.getDays()%></h3>
 						<p class="mb-4">Price<%=pack.getCost()%> per person</p>
-						<a href="view_more.do?rest_id=<%=pack.getPackageId()%>"><p class="mb-4">Click Here for more info </p></a>
+						<a href="view_more_pack.do?pack_id=<%=pack.getPackageId()%>"><p class="mb-4">Click Here for more info </p></a>
 						<span class="inline-flex">
 						  <a class="text-gray-500">
 							<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
@@ -102,6 +102,7 @@
 				}
  </script>
 
- <script src="js/getRest.js"></script>
+ 
+ <script src="js/rest_gallery.js"></script>
  </body>
 </html>

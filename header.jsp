@@ -16,7 +16,7 @@
 						
 						<ul class="main-nav animated slideInDown "  id="check-class">
 							<li><a href="#"><b>HOME</b></a></li>
-							<li><a href="#"><b>ABOUT</b></a></li>
+							<li><a href="about.jsp"><b>ABOUT</b></a></li>
 							<li><a href="explore.jsp"><b>EXPLORE</b></a></li>
 							<li><a href="#"><b>RESTAURANT</b></a></li>
 							<li><a href="login.jsp"><b>SIGNIN</b></a></li>

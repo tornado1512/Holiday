@@ -56,13 +56,17 @@ public Accomodation collectAccomodation(){
 			String query="select * from accomodations ";
 			PreparedStatement pst=con.prepareStatement(query);
 			ResultSet rst=pst.executeQuery();
-			if(rst.next()){
+			while(rst.next()){
 				Accomodation accomodation= new Accomodation(rst.getInt(1),rst.getString(2),new City(rst.getInt("city_id")));
 				acc.add(accomodation);
 			}
 			//System.out.println("hello accomodation");
+			return acc;
 		}
 		catch (ClassNotFoundException|SQLException e){
+			e.printStackTrace();
+		}
+		catch(Exception e){
 			e.printStackTrace();
 		}
 		return acc;

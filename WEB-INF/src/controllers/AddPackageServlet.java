@@ -42,7 +42,7 @@ public class AddPackageServlet extends HttpServlet{
 				ServletContext context = getServletContext();
 				String realPath = context.getRealPath("/");
 				realPath=realPath+"pac_img";
-				System.out.println(fileItems.size());
+				//System.out.println(fileItems.size());
 				for(FileItem fileItem:fileItems){
 					if(fileItem.isFormField()){
 						if(fileItem.getFieldName().equals("pacname")){
@@ -92,8 +92,8 @@ public class AddPackageServlet extends HttpServlet{
 						}
 					}
 					else{
-						if(fileItem.getFieldName().equals("disp_img")){
-							System.out.println(fileItem.getName()+"@@@@@@@@");
+						if(fileItem.getFieldName().equals("display_image")){
+							//System.out.println(fileItem.getName()+"@@@@@@@@");
 							File file = new File(realPath,fileItem.getName());
 							try{
 								dispImg=dispImg+fileItem.getName();
