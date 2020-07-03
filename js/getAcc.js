@@ -1,5 +1,5 @@
 //alert('hello world');
-//alert('Hello');
+alert('Hello');
 window.onload = initAll;
 
 function initAll(){
@@ -13,7 +13,7 @@ function getAllElements(){
 	fld = document.getElementById('fld');
 	records = document.getElementById('records');
 	
-	details = document.getElementById('details');	
+	//details = document.getElementById('details');	
 }
 
 function setAllActions(){
@@ -22,13 +22,13 @@ function setAllActions(){
 
 var req;
 function collectRecords(){
-	details.innerHTML = ' ';
-	details.style.display = 'none';
+	//details.innerHTML = ' ';
+	//details.style.display = 'none';
 	
 	if(fld.value.length>1){
 		req = new XMLHttpRequest();
 
-		req.open('get','collect_records.do?city='+fld.value,true);
+		req.open('get','collect_acc.do?acc='+fld.value,true);
 		req.onreadystatechange = showRecords;
 		req.send(null);
 	}else{
@@ -51,8 +51,8 @@ function showRecords(){
 		for(i=0;i<len;i++){
 			var elm = document.createElement('div');
 			elm.className = 'rec';
-			elm.innerHTML = arr[i]['cityName'];
-			elm.ctid = arr[i]['cityId']
+			elm.innerHTML = arr[i]['accomodationName'];
+			//elm.ctid = arr[i]['cityId']
 
 			elm.onmouseover = function(){ this.className = 'rec over'; }; 
 			elm.onmouseout = function(){ this.className = 'rec out'; };

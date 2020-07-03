@@ -221,5 +221,15 @@
 	<url-pattern>/view_more_pack.do</url-pattern>
   </servlet-mapping>
 
+<servlet>
+	<servlet-name>app22</servlet-name>
+	<servlet-class>controllers.CollectAccServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+	<servlet-name>app22</servlet-name>
+	<url-pattern>/collect_acc.do</url-pattern>
+  </servlet-mapping>
+
 
 </web-app>

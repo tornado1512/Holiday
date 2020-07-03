@@ -72,7 +72,32 @@ public Accomodation collectAccomodation(){
 		return acc;
 	}
 
+	public static ArrayList<Accomodation> collectAcc(String acc){
+		ArrayList<Accomodation> accs = new ArrayList<Accomodation>();
+		try{
+				Class.forName("com.mysql.jdbc.Driver");
 
+				Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/minor?user=root&password=1234");
+
+				String query = "select accomodation_name from accomodations where accomodation_name like '"+acc+"%'";
+
+				PreparedStatement pst = con.prepareStatement(query);
+
+				ResultSet rs = pst.executeQuery();
+
+				while(rs.next()){
+						Accomodation acco= new Accomodation();
+						
+						acco.accomodationName= rs.getString(1);
+
+						accs.add(acco);
+				}
+				con.close();
+		}catch(ClassNotFoundException | SQLException e){
+					e.printStackTrace();
+		}
+		return accs;
+	}
 	public Accomodation(String accomodationName){
 		this.accomodationName=accomodationName;
 	}

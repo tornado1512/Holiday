@@ -5,6 +5,7 @@
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="css/index.css" />
 		<link rel="stylesheet" type="text/css"  href="css/my_rest_home.css" />
+		 <link rel="stylesheet" type="text/css"  href="css/select_city.css" />
 	<link href="http://fonts.googleapis.com/css?family=Flamenco" rel="stylesheet">
 	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -59,7 +60,11 @@
 																</tr>
 																<tr>
 																		<td>Accomodation:</td>
-																		<td><input type="text" name="accomodation" id="accomodation"/></td>
+																		<td><input type="text" name="accomodation" id="fld"/></td>
+																		<td>
+																		<div id="records"></div>
+																		</div>
+																		</td>
 																</tr>
 																<tr>
 																		<td>Days:</td>
@@ -140,7 +145,8 @@
 
 		</div>
 
-       <script src="js/package.js">
+       <script src="js/package.js"></script>
+       <script src="js/getAcc.js"></script>
     </body>
 </html>
 

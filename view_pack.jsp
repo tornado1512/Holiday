@@ -54,6 +54,7 @@
 						  </tr>
 						</thead>
 						<tbody>
+							
 							<%for(Packagee pack:admin){%>
 						  <tr style="color:white;">
 							<td class="px-4 py-3"><%=pack.getPackageId()%></td>
@@ -61,7 +62,7 @@
 							<td class="px-4 py-3"><%=pack.getCost()%></td>
 							<!--
 							<td class="w-10 text-center">
-							  <input name="plan" type="radio">
+							  <input name="plan" type="radio" value="<%=pack.getPackageId()%>" >
 								-->
 							</td>
 						  </tr>

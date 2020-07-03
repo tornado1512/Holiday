@@ -100,31 +100,31 @@ public class City{
 	}*/
 
 	public static ArrayList<City> collectCities(String ct){
-					ArrayList<City> cities = new ArrayList<City>();
-					try{
-							Class.forName("com.mysql.jdbc.Driver");
+		ArrayList<City> cities = new ArrayList<City>();
+		try{
+				Class.forName("com.mysql.jdbc.Driver");
 
-							Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/minor?user=root&password=1234");
+				Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/minor?user=root&password=1234");
 
-							String query = "select city_id,city_name from cities where city_name like '"+ct+"%'";
+				String query = "select city_id,city_name from cities where city_name like '"+ct+"%'";
 
-							PreparedStatement pst = con.prepareStatement(query);
+				PreparedStatement pst = con.prepareStatement(query);
 
-							ResultSet rs = pst.executeQuery();
+				ResultSet rs = pst.executeQuery();
 
-							while(rs.next()){
-									City city = new City();
-									city.cityId = rs.getInt(1);
-									city.cityName = rs.getString(2);
+				while(rs.next()){
+						City city = new City();
+						city.cityId = rs.getInt(1);
+						city.cityName = rs.getString(2);
 
-									cities.add(city);
-							}
-							con.close();
-					}catch(ClassNotFoundException | SQLException e){
-								e.printStackTrace();
-					}
-					return cities;
-			}
+						cities.add(city);
+				}
+				con.close();
+		}catch(ClassNotFoundException | SQLException e){
+					e.printStackTrace();
+		}
+		return cities;
+	}
 
 
 
