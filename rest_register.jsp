@@ -47,11 +47,11 @@
 														<table class="form-table">
 																<tr>
 																		<td>Restaurant name:</td>
-																		<td><input type="text" name="restName" id="restName"/></td>
+																		<td><input type="text" name="restName" id="restName" required/></td>
 																</tr>
 																<tr>
 																		<td>City:</td>
-																		<td><select name="city" id="city">
+																		<td><select name="city" id="city" required>
 																				<option>jabalpur</option>
 																				<option>Bhopal</option>
 																				<option>Indore</option>
@@ -60,21 +60,21 @@
 																</tr>
 																<tr>
 																		<td>Restaurant Address:</td>
-																		<td><input type="text" name="restAddress" id="restAddress"/></td>
+																		<td><input type="text" name="restAddress" id="restAddress" required/></td>
 																</tr>
 																<tr>
 																		<td>Restaurant Contact no:</td>
-																		<td><input type="text" name="restContact" id="restContact"/>
+																		<td><input type="text" name="restContact" id="restContact" required/>
 																				<span id="conterr" class="errmsg">Invalid Contact must be eqaul to character</span>
 																		</td>
 																</tr>
 																<tr>
 																		<td>Opening Time:</td>
-																		<td><input type="time" name="optime"/></td>
+																		<td><input type="time" name="optime" required/></td>
 																</tr>
 																<tr>
 																		<td>Closing Time</td>
-																		<td><input type="time" name="cltime"/></td>
+																		<td><input type="time" name="cltime" required/></td>
 																</tr>
 																<tr>
 																		<td>Category:</td>
@@ -88,14 +88,14 @@
 																<tr>
 																		<td>Display Image:</td>
 																		<td>
-																				<input type="file" name="disp_img">
+																				<input type="file" name="disp_img" required>
 																		</td>
 																</tr>
 																<tr>
 																		<td>Restaurant Image:</td>
 																		<td>
 																					<div id="box">
-																					<input type="file" name="img"  id="file1">
+																					<input type="file" name="img"  id="file1" required>
 																					</div>
 																		</td>
 																</tr> 

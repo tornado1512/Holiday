@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!doctype html>
 <html lang="en">
  <head>
@@ -26,7 +27,7 @@
 			</nav>
 			
 			<div class="main-content-header">
-			<h1 id="data"><span id="data2" class="color-change">EXPLORE RESTAURANTS IN VARIOUS CITIES!!!</span></br></br>
+			<h1 id="data"><span id="data2" class="color-change" style="font-size:20px;">EXPLORE RESTAURANTS IN VARIOUS CITIES!!!</span></br></br></br></br></br>
 					<div id="box">
 						<form method="Post" action="collect_rest.do" id="form1">
 							<input type="text"  id = "fld" name="ct_name" /><button style="font-size:17px" form="form1" type="submit" value="submit"><i class="fa fa-search"></i></button>
@@ -53,5 +54,6 @@
  </script>
  <script src="js/select_city.js"></script>
  <script src="js/test.js"></script>
+ <c:import url="footer.jsp" />
  </body>
 </html>

@@ -4,7 +4,7 @@
 	box-sizing:border-box;
 }
 body{
-	font-size:10px;
+	font-size:20px;
 	overflow-x:hidden;
 	color:white;
 	font-family: 'Flamenco', cursive;
@@ -18,7 +18,7 @@ body{
 }
 header{
 	background-image: linear-gradient(rgba(105,105,105,0.4),rgba(105,105,105,0.4)),url("../images/theme3.jpg") ;
-	height:100vh;
+	height:250vh;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position:center;
@@ -58,9 +58,9 @@ header{
 .main-content-header{
 	width:1180px;
 	position: absolute;
-	top: 40%;
+	top: 50%;
 	left: 50%;
-	transform: translate(-30%, -20%);
+	transform: translate(-50%, -20%);
 }
 h1{
 	color:white;
@@ -72,10 +72,10 @@ h1{
 	
 }
 #data{
-	font-size: 25px;
+	font-size: 30px;
 }
 #data2{
-	font-size:40px;
+	font-size:55px;
 }
 .btn{
 	display: inline-block;
@@ -84,13 +84,13 @@ h1{
 	text-decoration:none;
 	text-transform: uppercase;
 	border-radius: 200px;
-	transition : background-color 0.2s,border 0.2,color 0.2;
+	transition : background-color 0.2s,border 0.2s,color 0.2;
 }
 .btn-full{
 	background-color: transparent;
-	color:white;
+	color: black;
 	margin-right: 15px;
-	border: 1px solid white;
+	border: 1px solid black;
 }
 .btn-full:hover{
 	background-color:#ff66cc;
@@ -103,9 +103,9 @@ h1{
 .btn-nav:hover{
 	background-color:#ff66cc;
 }
-/*.color-change{
+.color-change{
 	animation: colorchange 1s infinite;
-}*/
+}
 @keyframes  colorchange{
 	0%{color:#ff66cc;}
 	25%{color:#3366ff;}
@@ -150,4 +150,18 @@ h1{
 	h1{
 		font-size: 160%;
 	}
+}
+
+/*.outer-div{
+	border:1px solid red;
+}
+.inner-div{
+	border:1px solid blue;
+	margin-top:-60px;
+}*/
+.disp{
+	border:2px solid black;
+	height:150hv;
+	background-color:black;
+	opacity:0.7;
 }

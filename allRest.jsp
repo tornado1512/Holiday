@@ -4,8 +4,8 @@
 <!doctype html>
 <html lang="en">
  <head>
-  <title>Holidays</title>
- <link rel="stylesheet" type="text/css"  href="css/header.css" />
+  <title>ALL RESTAURANT </title>
+ <link rel="stylesheet" type="text/css"  href="css/all_Rest.css" />
  <link href="http://fonts.googleapis.com/css?family=Flamenco" rel="stylesheet">
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -34,11 +34,11 @@
 			<%ArrayList<RestRegister>rests=(ArrayList) request.getAttribute("rests");%>
 		<div class="header">
 			<section class="text-gray-700 body-font">
-  <div class="container px-5 py-24 mx-auto">
-    <div class="flex flex-col text-center w-full mb-20">
-      <h1 class="text-2xl font-medium title-font mb-4 text-gray-900 tracking-widest" style="color:white;">BEST RESTAURANTS IN YOUR JABALPUR</h1>
+  <div class="container px-5 py-24 mx-auto outer-div">
+    <div class="flex flex-col text-center w-full mb-20 inner-div">
+      <h1 class="text-2xl font-medium title-font mb-4 text-gray-900 tracking-widest" style="color:black;font-size:24px;"><b>BEST RESTAURANTS IN YOUR JABALPUR</b></h1>
 	  <div style="display:inline">
-		<h1>Choose Cuisine</h1>
+		<h1 style="color:black">Choose Cuisine</h1></br></br>
 		<form method="post" action="categ.do">
 			<button type="submit" name="categ"  value="all" class="btn success">All</button>
 			<button type="submit" value="Chinese" name="categ"  class="btn info">Chinese</button>
@@ -47,9 +47,9 @@
 			<button type="submit" value="North Indian" name="categ" class="btn default">N. Indian</button>
 		</form>
       </div></br>
-	  <p class="lg:w-2/3 mx-auto leading-relaxed text-base" style="color:white;"><%=(String)request.getAttribute("msg")%> Restaurants</p>
+	  <p class="lg:w-2/3 mx-auto leading-relaxed text-base" style="color:black;font-size:25px;"><b><%=(String)request.getAttribute("msg")%> Restaurants</b></p>
     </div>
-    <div class="flex flex-wrap -m-4" style="color:white;">
+    <div class="flex flex-wrap -m-4 disp" style="color:white;">
 		<%for(RestRegister rest:rests){%>
 			<div class="p-4 lg:w-1/2" style="color:white;">
 				<div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">

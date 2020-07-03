@@ -48,25 +48,25 @@
 									<tr>
 										<td>Name</td>
 										<td>:</td>
-										<td><input type="text" name="aname"></td>
+										<td><input type="text" name="aname" required></td>
 									</tr>
 									<tr>
 										<td>Address</td>
 										<td>:</td>
-										<td><input type="text" name="address"></td>
+										<td><input type="text" name="address" required></td>
 									</tr>
 									<tr>
 										<td>City</td>
 										<td>:</td>
-										<td><input type="text" name="city"></td>
+										<td><input type="text" name="city" required></td>
 									</tr>
 									<tr>
 										<td>Upload Pic</td>
 										<td>:</td>
-										<td><input type="file" name="pic"></td>
+										<td><input type="file" name="pic" required></td>
 									</tr>
 									<tr>
-										<td colspan="3"><input type="submit" value="save"></td>
+										<td colspan="3"><input type="submit" value="save" required></td>
 									</tr>
 									
 								</table>

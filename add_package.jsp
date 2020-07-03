@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="css/index.css" />
 		<link rel="stylesheet" type="text/css"  href="css/my_rest_home.css" />
-		 <link rel="stylesheet" type="text/css"  href="css/select_city.css" />
+		 <link rel="stylesheet" type="text/css"  href="css/select_city.css" /> 
 	<link href="http://fonts.googleapis.com/css?family=Flamenco" rel="stylesheet">
 	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -43,7 +43,7 @@
 					<div class="main-content-header">
 					<h1 id="data"><b><span id="data2" class="color-change">HAPPY HOLIDAYS</span></b></h1>
 					<h1><span id="data3">ADD NEW PACKAGE</span></h1>
-								<div class="form-div">
+								<div class="form-div" style="font-size:15px;">
 											<form action="add_pack.do"method="POST" id="regform" enctype="multipart/form-data">
 														<table class="form-table">
 																<tr>
@@ -51,11 +51,9 @@
 																		<td><input type="text" name="pacname" id="pacname"/></td>
 																</tr>
 																<tr>
-																		<td>Type Category:</br></td>
-																		<td>religious:</td><td><input type="radio" name="typecategory" value="religious" /></td>
-																		<td>Honeymoon:</td><td><input type="radio" name="typecategory" value="Honeymoon" /></td>
-																		<td>Family Vacation:</td><td><input type="radio" name="typecategory" value="Family Vacation" /></td>
-																		<td>Adventurous:</td><td><input type="radio" name="typecategory" value="Adventurous" /></br></br></td>
+														<td>Type Category:</br></td>
+		<td style="font-size:12px;">religious:<input type="radio" name="typecategory" value="religious" />Honeymoon:<input type="radio" name="typecategory" value="Honeymoon" /></br>Family Vacation:<input type="radio" name="typecategory" value="Family Vacation"/>
+		Adventurous:<input type="radio" name="typecategory" value="Adventurous" /></td>
 
 																</tr>
 																<tr>
