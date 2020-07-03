@@ -32,8 +32,8 @@
 		<br>
 		<div class="login">
 				<form method="POST" action="login.do">
-				<input type="text" placeholder="username or email" name="email"></br>
-				<input type="password" placeholder="password" name="password"></br></br>
+				<input type="text" placeholder="username or email" name="email" required></br>
+				<input type="password" placeholder="password" name="password" required></br></br>
 				<input type="radio" value="owner" name="logType"><label> login as Owner</label></br>
 				<input type="radio" value="user" name="logType"><label> login as User</label>
 				</br>

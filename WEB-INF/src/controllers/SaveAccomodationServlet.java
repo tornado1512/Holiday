@@ -34,7 +34,7 @@ public class SaveAccomodationServlet extends HttpServlet{
 			try{
 				List<FileItem> fileItems=sfu.parseRequest(request);
 				String realPath=getServletContext().getRealPath("/");
-				realPath=realPath+"pac_img";
+				realPath=realPath+"pac_img/";
 				System.out.println(fileItems.size());
 				for(FileItem fileItem:fileItems){
 					//System.out.println(fileItem.getFieldName());

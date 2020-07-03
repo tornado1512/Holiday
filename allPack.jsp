@@ -5,7 +5,7 @@
 <html lang="en">
  <head>
   <title>Holidays</title>
- <link rel="stylesheet" type="text/css"  href="css/header.css" />
+ <link rel="stylesheet" type="text/css"  href="css/all_Pack.css" />
  <link href="http://fonts.googleapis.com/css?family=Flamenco" rel="stylesheet">
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -34,11 +34,11 @@
 			<%ArrayList<Packagee>packs=(ArrayList) request.getAttribute("packs");%>
 		<div class="header">
 			<section class="text-gray-700 body-font">
-  <div class="container px-5 py-24 mx-auto">
+  <div class="container px-5 py-24 mx-auto ">
     <div class="flex flex-col text-center w-full mb-20">
-      <h1 class="text-2xl font-medium title-font mb-4 text-gray-900 tracking-widest" style="color:white;">CHOOSE BEST PACKAGE FOR YOUR TRIP</h1>
+      <h1 class="text-2xl font-medium title-font mb-4 text-gray-900 tracking-widest" style="color:black;"><b>CHOOSE BEST PACKAGE FOR YOUR TRIP</b></h1>
 	  <div style="display:inline">
-		<h1>Choose cateogry</h1>
+		<h1 style="color:black;"><b>Choose cateogry</b></h1>
 		<form method="post" action="pack_categ.do">
 			<button type="submit" name="categ"  value="0" class="btn success">All</button>
 			<button type="submit" value="1" name="categ"  class="btn info">Religous</button>
@@ -47,12 +47,12 @@
 			<button type="submit" value="4" name="categ" class="btn default">Honeymooon</button>
 		</form>
       </div></br>
-	  <p class="lg:w-2/3 mx-auto leading-relaxed text-base" style="color:white;"><%=(String)request.getAttribute("cat")%> Packages</p>
+	  <p class="lg:w-2/3 mx-auto leading-relaxed text-base" style="color:black;font-size:25px;"><b><%=(String)request.getAttribute("cat")%> Packages</b></p>
     </div>
     <div class="flex flex-wrap -m-4" style="color:white;">
 		<%if(!(packs==null)){%>
 			<%for(Packagee pack:packs){%>
-				<div class="p-4 lg:w-1/2" style="color:white;">
+				<div class="p-4 lg:w-1/2 disp" style="color:white; ">
 					<div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
 					  <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4 image"  src="<%=pack.getDispImg()%>">
 					  <div class="flex-grow sm:pl-8">

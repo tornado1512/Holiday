@@ -136,15 +136,21 @@
 									<section class="text-gray-700 body-font">
 										  <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
 									 <p align="center" style="font-size:40px;color:white"><b>BEST ACCOMODATION IN AFFORDABLE PRICE!!!..</b></p>
-											<img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="hero" src="<%= record.getAccomodationPicPath()%>" id="pic1">
+											<img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded image" alt="hero" src="<%= record.getAccomodationPicPath()%>">
 											<div class="text-center lg:w-2/3 w-full">
 											  <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900"><%= record. getAccomodationName()%></h1>
 											  <p class="mb-8 leading-relaxed" style="color:white">
-													<h1>ACCOMODATION NAME-<%= record.getAccomodationName()%></br>
-													ACCOMODATION ADDRESS-<%= record.getAddress()%></br>
-													ACCOMODATION CITY-<%= record.getCity()%></br>
+													<h1><b><i>We provide you the best Food facility in your destination city in your affordabvle budget with all facility of veg & non-veg with amazing taste along with complete hygine and saftey.Book your table and order your food .You also have facility of delivery</i></b></h1></br></br>
+													<h1>ACCOMODATION NAME - <%= record.getAccomodationName()%></br>
+													ACCOMODATION ADDRESS - <%= record.getAddress()%></br>
+													ACCOMODATION CITY - <%= record.getCity()%></br>
 													</h1>
 											  </p>
+											  <div class="flex">
+											</div></br></br>
+											<div>
+								<button class="flex ml-auto text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded last-button">ORDER FOOD</button>
+											</div>
 											</div>
 										  </div>
 									</section>
@@ -166,7 +172,6 @@
  </script>
  <script src="js/getPackage.js"></script>
  <script src="js/rest_gallery.js"></script>
- <script src="js/accomodation.js"></script>
 	<c:import url="footer.jsp" />
  </body>
 </html>

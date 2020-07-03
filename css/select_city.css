@@ -4,7 +4,7 @@
 	box-sizing:border-box;
 }
 body{
-	font-size:15px;
+	font-size:5px;
 	overflow-x:hidden;
 	color:white;
 	font-family: 'Flamenco', cursive;
@@ -18,7 +18,7 @@ body{
 }
 header{
 	background-image: linear-gradient(rgba(105,105,105,0.4),rgba(105,105,105,0.4)),url("../images/theme3.jpg") ;
-	height:100vh;
+	height:130vh;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position:center;
@@ -49,7 +49,8 @@ header{
 	color: white;
 	text-decoration:none;
 	text-transform: uppercase;
-	font-size:90%;
+	font-size:15px;
+	font-family:cursive;
 	font-weight: 100;
 }
 .main-nav li a:hover{
@@ -72,10 +73,10 @@ h1{
 	
 }
 #data{
-	font-size: 12px;
+	font-size: 5px;
 }
 #data2{
-	font-size:30px;
+	font-size:10px;
 	color:black;
 	font-family:cursive;
 }
@@ -155,6 +156,7 @@ body{
 	border: 1px solid #bbb;
 	width: 100px;
 	display: none;
+	font-size:13px;
 }
 input{
 	height:25px;

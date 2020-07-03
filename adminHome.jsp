@@ -30,13 +30,13 @@
 			<div class="main-content-header">
 			<h1 id="data"><span id="data2" class="color-change">Welcome To Admin DashBoard</span></br></br>
 			<% String ownerName=(String)session.getAttribute("ownername");%>
-			 ADMIN - <%=ownerName%> <h1>
-			<a href="admin_views.do?id=1" class="btn btn-full">View All Restaurants</a>
-			<a href="admin_views.do?id=2" class="btn btn-full">View All Packages</a>
-			<a href="admin_views.do?id=3" class="btn btn-full">View All Hotels</a>
-			<a href="admin_views.do?id=4" class="btn btn-full">View All Users</a>
-			<a href="add_accomodation.jsp" class="btn btn-nav">Add Hotels</a>
-			<a href="add_package.jsp" class="btn btn-nav">Add Package</a>
+			 AUTHERIZED TO - <%=ownerName%> <h1>
+			<a href="admin_views.do?id=1" class="btn btn-full">View Restaurants</a>
+			<a href="admin_views.do?id=2" class="btn btn-full">View Packages</a>
+			<a href="admin_views.do?id=3" class="btn btn-full">View Hotels</a>
+			<a href="admin_views.do?id=4" class="btn btn-full">View Users</a></br></br>
+			<a href="add_accomodation.jsp" class="btn btn-nav" style="border: 1px solid white;color:white">Add Hotels</a>&nbsp;
+			<a href="add_package.jsp" class="btn btn-nav"  style="border: 1px solid white;color:white">Add Package</a>
 			</div>
 		
 		</header>
