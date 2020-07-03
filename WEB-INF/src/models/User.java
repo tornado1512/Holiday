@@ -62,8 +62,9 @@ public class User{
 				//flag=spe.checkPassword(password,rst.getString(1));
 				
 			}
-			return flag;
 			con.close();
+			return flag;
+			
 		}
 		catch (ClassNotFoundException|SQLException e){
 			e.printStackTrace();

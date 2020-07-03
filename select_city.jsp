@@ -26,7 +26,7 @@
 			</nav>
 			
 			<div class="main-content-header">
-			<h1 id="data"><span id="data2" class="color-change" style="color:white;">EXPLORE RESTAURANTS IN VARIOUS CITIES!!!</span></br></br>
+			<h1 id="data"><span id="data2" class="color-change" style="color:white;font-size:25px;">EXPLORE RESTAURANTS IN VARIOUS CITIES!!!</span></br></br></br></br></br>
 					<div id="box">
 						<form method="Post" action="collect_rest.do" id="form1">
 							<input type="text"  id = "fld" name="ct_name" /><button style="font-size:17px" form="form1" type="submit" value="submit"><i class="fa fa-search"></i></button>

@@ -35,7 +35,7 @@
 								  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="inline-block w-8 h-8 text-gray-400 mb-8" viewBox="0 0 975.036 975.036">
 									<path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
 								  </svg>
-								  <p class="leading-relaxed text-lg">Edison bulb retro cloud bread echo park, helvetica stumptown taiyaki taxidermy 90's cronut +1 kinfolk. Single-origin coffee ennui shaman taiyaki vape DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware. Man bun next level coloring book skateboard four loko knausgaard. Kitsch keffiyeh master cleanse direct trade indigo juice before they sold out gentrify plaid gastropub normcore XOXO 90's pickled cindigo jean shorts. Slow-carb next level shoindigoitch ethical authentic, yr scenester sriracha forage franzen organic drinking vinegar.</p>
+								  <p class="leading-relaxed text-lg">Our vision behind this platform is to provide customer a best place where they get every facality from planning holidays to decide a delicious food of their choice.We devide our whole website into three different module ,the first one is EXPLORE section that offers you best places in every famous city,our next section is PACKAGE provide you a planned trip you only need to choose your days with your expected budget & our last section provide you best option of restaurants in every city with delicious taste and high level of hygene.</p>
 								</div>
 							  </div>
 							</section>
@@ -52,7 +52,7 @@
 										  <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="images/about2.jpg" alt="blog">
 										  <div class="p-6">
 											<h1 class="title-font text-lg font-medium text-gray-900 mb-3 head"><p>EXPLORE</p></h1>
-											<p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+											<p class="leading-relaxed mb-3">We provide you the best destination to plan an amazinf trip with your friends & family in affordable price.</p>
 											<div class="flex items-center flex-wrap ">
 											  <a href="#" style="color:blue">Learn Nore</a>
 											</div>
@@ -64,7 +64,7 @@
 										  <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="images/about3.jpg" alt="blog">
 										  <div class="p-6">
 											<h1 class="title-font text-lg font-medium text-gray-900 mb-3 head"><p>PACKAGES</p></h1>
-											<p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+											<p class="leading-relaxed mb-3">Our package section provides full facility and plan your trip in scheduled way to maximum utilize your Holiday and and make fun.</p>
 											<div class="flex items-center flex-wrap">
 											 <a href="#" style="color:blue">Learn Nore</a>
 											</div>
@@ -76,7 +76,7 @@
 										  <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="images/images.jpg" alt="blog">
 										  <div class="p-6">
 											<h1 class="title-font text-lg font-medium text-gray-900 mb-3 head"><p>RESTAURANTS</p></h1>
-											<p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+											<p class="leading-relaxed mb-3">We provide you immense option with different cultural foods and best taste in afforadle price with best hygene.</p>
 											<div class="flex items-center flex-wrap ">
 											 <a href="#" style="color:blue">Learn Nore</a>
 											</div>
@@ -95,7 +95,7 @@
 									  <div class="lg:w-1/3 lg:mb-0 mb-6 p-4 section3-div1">
 										<div class="h-full text-center">
 										  <img alt="testimonial" class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" src="images/member1.jpg">
-										  <p class="leading-relaxed">Edison bulb retro cloud bread echo park, helvetica stumptown taiyaki taxidermy 90's cronut +1 kinfolk. Single-origin coffee ennui shaman taiyaki vape DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
+										  <p class="leading-relaxed">He is 3rd year Undergraduate student persuing B.tech from Gyan Ganga College Of Technology ,Jabalpur from C.S department.Highly intrested in the field of full-stack development and having expertise in JAVA.Apart from this he is good in C/C++ ,MySQL,HTML,CSS and JS.</p>
 										  <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
 										  <h2 class="text-black-900 font-medium title-font tracking-wider text-sm info">VISHAL AGRAHARI</h2>
 										  <p class="text-black-500">FullStack Developer</p>
@@ -104,7 +104,7 @@
 									  <div class="lg:w-1/3 lg:mb-0 mb-6 p-4 section3-div2" >
 										<div class="h-full text-center">
 										  <img alt="testimonial" class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" src="images/member3.jpg">
-										  <p class="leading-relaxed">Edison bulb retro cloud bread echo park, helvetica stumptown taiyaki taxidermy 90's cronut +1 kinfolk. Single-origin coffee ennui shaman taiyaki vape DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
+										  <p class="leading-relaxed">She is 3rd year Undergraduate student persuing B.tech from Gyan Ganga College Of Technology ,Jabalpur from C.S department.Highly intrested in the field of full-stack development and having expertise in JAVA.Apart from this he is good in C/C++ ,MySQL,HTML,CSS and JS.</p>
 										  <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
 										  <h2 class="text-black-900 font-medium title-font tracking-wider text-sm info">SHREYA GUPTA</h2>
 										  <p class="text-black-500 ">FullStack Developer</p>
