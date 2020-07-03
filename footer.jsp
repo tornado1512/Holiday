@@ -20,11 +20,13 @@
 		-->				
 							<div class="footer_third" style="display:inline;">
 							<h1>Contact us</h1>
-							MobileNo:9993998677</br>
-							    :7999745131</pre></br>
-							Email us:1811shreyagupta@gmail.com</br>
-							<pre>      :vagrahari943@gmail.com</pre>
-						</div>
+							MobileNo:</br>
+							1.9993998677</br>
+				            2.7999745131</br>
+							Email us:</br>
+							1.1811shreyagupta@gmail.com</br>
+							2.vagrahari943@gmail.com:</br>
+							</div>
 							<div class="footer_third">
 							<h1>More</h1>
 							<a href="explore.jsp">Explore</a>
@@ -40,14 +42,18 @@
 							<li><a href="https://twitter.com/explore"><i class="fa fa-twitter"></i></a></li>
 							<li><a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram"></i></a></li>
 							<li><a href="https://support.google.com/mail/answer/56256?hl=en"><i class="fa fa-envelope-o"></i></a></li>
-							<li><a href="#"><i class="fa fa-phone"></i></a></li></br></br>
-							<li>feedback@Holiday.com</li>
 							<span>
-								Gyan Ganga College Of Technology</br>
-								near Tilwara Bridge,</br>
-								Nagpur Road</br>
-								Jabalpur, M.P.</br>
+							<h1>Developed by:</h1>
+							1.Shreya Gupta
+							2.Vishal Agrahari</br>
+							Connect at linkedin:
+							<a href="https://www.linkedin.com/in/shreya-gupta-13a154177/"><i class="fa fa-linkedin-square"></i>Shreya
+							<a href="https://www.linkedin.com/in/vishal-agrahari-301524173/"><i class="fa fa-linkedin-square"></i>Vishal
+							
 							</span>
+							</div>
+							<div class="footer_third">
+							<p style="margin-left:400px;">all copyright reserved to developers</p>
 							</div>
 							
 
