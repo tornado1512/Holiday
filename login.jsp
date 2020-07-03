@@ -18,7 +18,7 @@
 						<ul class="main-nav animated slideInDown "  id="check-class">
 							<li><a href="index.jsp"><b>HOME</b></a></li>
 							<li><a href="about.jsp"><b>ABOUT</b></a></li>
-							<li><a href="exlpore.jsp"><b>EXPLORE</b></a></li>
+							<li><a href="explore.jsp"><b>EXPLORE</b></a></li>
 							<li><a href="select_city.jsp"><b>RESTAURANT</b></a></li>
 							<li><a href="login.jsp"><b>SIGNIN</b></a></li>
 						</ul>
@@ -34,8 +34,8 @@
 				<form method="POST" action="login.do">
 				<input type="text" placeholder="username or email" name="email" required></br>
 				<input type="password" placeholder="password" name="password" required></br></br>
-				<input type="radio" value="owner" name="logType"><label> login as Owner</label></br>
-				<input type="radio" value="user" name="logType"><label> login as User</label>
+				<input type="radio" value="owner" name="logType"required><label> login as Owner</label></br>
+				<input type="radio" value="user" name="logType"required><label> login as User</label>
 				</br>
 				<input type="submit" id="button" value="Login">
 				</br>

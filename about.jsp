@@ -20,7 +20,7 @@
 						<ul class="main-nav animated slideInDown "  id="check-class">
 							<li><a href="index.jsp"><b>HOME</b></a></li>
 							<li><a href="about.jsp"><b>ABOUT</b></a></li>
-							<li><a href="exlpore.jsp"><b>EXPLORE</b></a></li>
+							<li><a href="explore.jsp"><b>EXPLORE</b></a></li>
 							<li><a href="select_city.jsp"><b>RESTAURANT</b></a></li>
 							<li><a href="login.jsp"><b>SIGNIN</b></a></li>
 						</ul>
@@ -54,7 +54,7 @@
 											<h1 class="title-font text-lg font-medium text-gray-900 mb-3 head"><p>EXPLORE</p></h1>
 											<p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
 											<div class="flex items-center flex-wrap ">
-											  <a href="#" style="color:blue">Learn Nore</a>
+											  <a href="explore.jsp" style="color:blue">Learn Nore</a>
 											</div>
 										  </div>
 										</div>
@@ -66,7 +66,7 @@
 											<h1 class="title-font text-lg font-medium text-gray-900 mb-3 head"><p>PACKAGES</p></h1>
 											<p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
 											<div class="flex items-center flex-wrap">
-											 <a href="#" style="color:blue">Learn Nore</a>
+											 <a href="allPack.jsp" style="color:blue">Learn Nore</a>
 											</div>
 										  </div>
 										</div>
@@ -78,7 +78,7 @@
 											<h1 class="title-font text-lg font-medium text-gray-900 mb-3 head"><p>RESTAURANTS</p></h1>
 											<p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
 											<div class="flex items-center flex-wrap ">
-											 <a href="#" style="color:blue">Learn Nore</a>
+											 <a href="allRest.jsp" style="color:blue">Learn Nore</a>
 											</div>
 										  </div>
 										</div>

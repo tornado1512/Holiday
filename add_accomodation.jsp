@@ -31,7 +31,7 @@
 						<ul class="main-nav animated slideInDown " style="font-size:1.2vw;" id="check-class">
 							<li><a href="adminHome.jsp"><b>HOME.</b></a></li>
 							<li><a href="about.jsp"><b>ABOUT</b></a></li>
-							<li><a href="exlpore.jsp"><b>EXPLORE</b></a></li>
+							<li><a href="explore.jsp"><b>EXPLORE</b></a></li>
 							<li><a href="select_city.jsp"><b>RESTAURANT</b></a></li>
 							<li><a href="logout.do"><b>LOGOUT</b></a></li>
 						</ul>

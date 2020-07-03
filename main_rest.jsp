@@ -11,8 +11,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <meta charset="utf-8"/><link rel="icon" href="/tailblocks/favicon.png"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="Web site created using create-react-app"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.4.6/tailwind.min.css"><link rel="manifest" href="/tailblocks/manifest.json"/><link href="/tailblocks/static/css/main.e64c1c7e.chunk.css" rel="stylesheet">
-
-<meta charset="utf-8"/><link rel="icon" href="/tailblocks/favicon.png"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="Web site created using create-react-app"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.4.6/tailwind.min.css"><link rel="manifest" href="/tailblocks/manifest.json"/><link href="/tailblocks/static/css/main.e64c1c7e.chunk.css" rel="stylesheet">
  </head>
  <body>
 		<header>
@@ -23,7 +21,7 @@
 						<ul class="main-nav animated slideInDown "  id="check-class">
 							<li><a href="index.jsp"><b>HOME</b></a></li>
 							<li><a href="about.jsp"><b>ABOUT</b></a></li>
-							<li><a href="exlpore.jsp"><b>EXPLORE</b></a></li>
+							<li><a href="explore.jsp"><b>EXPLORE</b></a></li>
 							<li><a href="select_city.jsp"><b>RESTAURANT</b></a></li>
 							<li><a href="login.jsp"><b>SIGNIN</b></a></li>
 						</ul>
