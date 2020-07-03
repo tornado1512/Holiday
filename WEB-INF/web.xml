@@ -211,7 +211,15 @@
 	<url-pattern>/pack_categ.do</url-pattern>
   </servlet-mapping>
 
+<servlet>
+	<servlet-name>app21</servlet-name>
+	<servlet-class>controllers.MainPackageServlet</servlet-class>
+  </servlet>
 
+  <servlet-mapping>
+	<servlet-name>app21</servlet-name>
+	<url-pattern>/view_more_pack.do</url-pattern>
+  </servlet-mapping>
 
 
 </web-app>

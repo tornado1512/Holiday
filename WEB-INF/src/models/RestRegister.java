@@ -147,7 +147,7 @@ public class RestRegister{
 		return rests;
     }
 	//for collecting particular restaurant information
-	public static RestRegister collectRest3(Integer restRegisterId){
+	public  RestRegister collectRest3(Integer restRegisterId){
 		RestRegister rest=null;
 		try{
 		Class.forName("com.mysql.jdbc.Driver");
