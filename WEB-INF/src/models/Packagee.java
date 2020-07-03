@@ -188,7 +188,7 @@ public class Packagee{
 			PreparedStatement pst=con.prepareStatement(query);
 			pst.setInt(1,PackageId);
 			ResultSet rst=pst.executeQuery();
-			while(rst.next()){w
+			while(rst.next()){
 				 packagee=new Packagee(rst.getInt(1),rst.getString(2),new TypeCategory(rst.getInt(3)),rst.getInt(4),rst.getInt(5),rst.getString(6),new Accomodation(rst.getInt(7)),rst.getString(8),rst.getString(9),rst.getString(10),rst.getString(11),rst.getString(12),rst.getString(13));
 				
 			}
