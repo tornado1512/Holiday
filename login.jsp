@@ -16,11 +16,11 @@
 						<img src="images/pic.png" alt="logo" class="logo1">
 						
 						<ul class="main-nav animated slideInDown "  id="check-class">
-							<li><a href="#"><b>HOME</b></a></li>
-							<li><a href="#"><b>ABOUT</b></a></li>
-							<li><a href="#"><b>EXPLORE</b></a></li>
-							<li><a href="#"><b>RESTAURANT</b></a></li>
-							<li><a href="#"><b>SIGNIN</b></a></li>
+							<li><a href="index.jsp"><b>HOME</b></a></li>
+							<li><a href="about.jsp"><b>ABOUT</b></a></li>
+							<li><a href="exlpore.jsp"><b>EXPLORE</b></a></li>
+							<li><a href="select_city.jsp"><b>RESTAURANT</b></a></li>
+							<li><a href="login.jsp"><b>SIGNIN</b></a></li>
 						</ul>
 						<a href="#" class="mobile-icon" onclick="slideshow()"><i class="fa fa-bars"></i></a>
 				</div>
@@ -46,7 +46,7 @@
 			<% String message= (String)request.getAttribute("message"); %>
             <% if(message!=null){ %>
             <div class="errmsg">
-              <%= message %>
+              <h1><%= message %></h1>
             </div>
             <% } %> 
 		</div>

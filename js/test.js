@@ -43,7 +43,7 @@ function showRecords(){
 	if(req.readyState==4&&req.status==200){
 		records.innerHTML = ' ';
 		records.style.display = 'block';
-		alert(req.responseText);
+		//alert(req.responseText);
 
 		var arr = eval(req.responseText);
 		

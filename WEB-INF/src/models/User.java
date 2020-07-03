@@ -39,6 +39,7 @@ public class User{
 		this.email=email;
 		this.password=password;
 	}
+	//t2
 	public boolean checkLogin(){
 		boolean flag=false;
 		try{
@@ -61,13 +62,18 @@ public class User{
 				//flag=spe.checkPassword(password,rst.getString(1));
 				
 			}
+			return flag;
 			con.close();
 		}
 		catch (ClassNotFoundException|SQLException e){
 			e.printStackTrace();
 		}
+		catch(Exception e){
+			e.printStackTrace();
+		}
 		return flag;
 	} 
+	//for saving user t4
 	public boolean saveRecord(){
 		boolean flag=false;
 		try{
@@ -87,8 +93,12 @@ public class User{
 				flag=true;
 			}
 			con.close();
+			return flag;
 		}
 		catch (ClassNotFoundException|SQLException e){
+			e.printStackTrace();
+		}
+		catch(Exception e){
 			e.printStackTrace();
 		}
 		return flag;

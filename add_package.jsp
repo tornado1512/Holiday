@@ -10,7 +10,6 @@
 	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css"  href="css/rest_form.css" / >
-		<script src="js/rest.js"></script>
         <title>Package register</title>
     </head>
     <body>
@@ -29,13 +28,13 @@
 						<div class="row clearfix">
 								<img src="images/pic.png" alt="logo" class="logo1">
 								
-								<ul class="main-nav animated slideInDown "  id="check-class">
-									<li><a href="#"><b>HOME</b></a></li>
-									<li><a href="#"><b>ABOUT</b></a></li>
-									<li><a href="#"><b>EXPLORE</b></a></li>
-									<li><a href="#"><b>RESTAURANT</b></a></li>
-									<li><a href="lodout.do"><b>LOGOUT</b></a></li>
-								</ul>
+						<ul class="main-nav animated slideInDown " id="check-class">
+							<li><a href="adminHome.jsp"><b>HOME.</b></a></li>
+							<li><a href="about.jsp"><b>ABOUT</b></a></li>
+							<li><a href="exlpore.jsp"><b>EXPLORE</b></a></li>
+							<li><a href="select_city.jsp"><b>RESTAURANT</b></a></li>
+							<li><a href="logout.do"><b>LOGOUT</b></a></li>
+						</ul>
 								<a href="#" class="mobile-icon" onclick="slideshow()"><i class="fa fa-bars"></i></a>
 						</div>
 					</nav>

@@ -26,7 +26,7 @@ import models.*;
 			else{
 				nextPage="my_rest_home.jsp";
 			}
-			System.out.println(nextPage);
+			//System.out.println(nextPage);
 		}
 		else{
 		nextPage="login.jsp";

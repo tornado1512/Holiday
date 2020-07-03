@@ -1,5 +1,5 @@
 //alert('hello world');
-alert('Hello');
+//alert('Hello');
 window.onload = initAll;
 
 function initAll(){

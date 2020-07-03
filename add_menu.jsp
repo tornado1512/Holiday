@@ -18,12 +18,12 @@
 				<div class="row clearfix">
 						<img src="images/pic.png" alt="logo" class="logo1">
 						
-						<ul class="main-nav animated slideInDown "  id="check-class">
-							<li><a href="#"><b>HOME</b></a></li>
-							<li><a href="#"><b>ABOUT</b></a></li>
-							<li><a href="#"><b>EXPLORE</b></a></li>
-							<li><a href="#"><b>RESTAURANT</b></a></li>
-							<li><a href="#"><b>SIGNIn</b></a></li>
+						<ul class="main-nav animated slideInDown " style="font-size:1vw;" id="check-class">
+							<li><a href="my_rest_home.jsp"><b>HOME.</b></a></li>
+							<li><a href="about.jsp"><b>ABOUT</b></a></li>
+							<li><a href="exlpore.jsp"><b>EXPLORE</b></a></li>
+							<li><a href="select_city.jsp"><b>RESTAURANT</b></a></li>
+							<li><a href="logout.do"><b>LOGOUT</b></a></li>
 						</ul>
 						<a href="#" class="mobile-icon" onclick="slideshow()"><i class="fa fa-bars"></i></a>
 				</div>
@@ -32,9 +32,6 @@
 			<div class="main-content-header">
 			<h1 id="data"><span id="data2" class="color-change">Welcome To Restautrant MENU</span></br>
 			
-			<!--<% Integer ownerId=(Integer)session.getAttribute("ownerId");%>
-			<h2>ownerId<%=ownerId%> <h2>
-			<%= session.getId()%>-->
 			<% String ownerName=(String)session.getAttribute("ownername");%>
 			<h2> Restaurant ownerName - <%=ownerName%> <h2>
 			<% String restName=(String)session.getAttribute("restName");%>
@@ -42,11 +39,7 @@
 
 
 			<h1 id="data"><span id="data2" class="color-change">Welcome To Restautrant MENU</span></br></br>
-			<!--
-			<% Integer ownerId=(Integer)session.getAttribute("ownerId");%>
-			<h2>ownerId<%=ownerId%> <h2>
-			<%= session.getId()%></br>
-			-->
+			
 
 			<a href="#" class="btn btn-full"><span id="add">ADD MENU</span></a>
 			<a href="view_menu.do" class="btn btn-nav">VIEW EXISTING MENU</a>

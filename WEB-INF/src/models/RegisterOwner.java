@@ -133,7 +133,7 @@ public class RegisterOwner{
 		}
 		return "noemail";	
 	}
-	/// Register function
+	/// Register function t3
 	public boolean saveRecord(){
 		boolean flag=false;
 		try{
@@ -155,15 +155,19 @@ public class RegisterOwner{
 				flag=true;
 			}
 			con.close();
+			return flag;
 		}
 		catch (ClassNotFoundException|SQLException e){
+			e.printStackTrace();
+		}
+		catch(Exception e){
 			e.printStackTrace();
 		}
 		return flag;
 	} 
 
 
-	///Login function
+	///Login function t1
 	public boolean checkLogin(){
 		boolean flag=false;
 		try{
@@ -194,9 +198,12 @@ public class RegisterOwner{
 			*/
 			}	
 			con.close();
-			
+			return flag;
 		}
 		catch (ClassNotFoundException|SQLException e){
+			e.printStackTrace();
+		}
+		catch(Exception e){
 			e.printStackTrace();
 		}
 		return flag;
