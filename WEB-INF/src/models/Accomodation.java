@@ -19,7 +19,7 @@ public class Accomodation{
 		this.accomodationId=accomodationId;
 		this.accomodationName=accomodationName;
 		this.address=address;
-		accomodationPicPath=accomodationPicPath;
+		this.accomodationPicPath=accomodationPicPath;
 		this.cityId=cityId;
 
 	}
@@ -58,8 +58,10 @@ public Accomodation collectAccomodation(){
 			PreparedStatement pst=con.prepareStatement(query);
 			pst.setInt(1,accomodationId);
 			ResultSet rst=pst.executeQuery();
-			rst.next();
-			accomodation= new Accomodation(rst.getInt(1),rst.getString(2),rst.getString(3),rst.getString(4),new City(rst.getInt(5)));
+			while(rst.next()){
+				accomodation= new Accomodation(rst.getInt(1),rst.getString(2),rst.getString(3),rst.getString(4),new City(rst.getInt(5)));
+			}
+			
 			System.out.println("hello accomodation");
 		}
 		catch (ClassNotFoundException|SQLException e){
