@@ -31,16 +31,16 @@
 
 						<div class="footer_third">
 							<h1>Follow us</h1>
-							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-							<li><a href="#"><i class="fa fa-instagram"></i></a></li>
-							<li><a href="#"><i class="fa fa-envelope-o"></i></a></li>
+							<li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="https://twitter.com/explore"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram"></i></a></li>
+							<li><a href="https://support.google.com/mail/answer/56256?hl=en"><i class="fa fa-envelope-o"></i></a></li>
 							<li><a href="#"><i class="fa fa-phone"></i></a></li></br></br>
 							<li>feedback@Holiday.com</li>
 							<span>
-								Hno.38,Dr Rajendra Prassad Ward</br>
-								infront of Tamarhai School</br>
-								near Damohnaka</br>
+								Gyan Ganga College Of Technology</br>
+								near Tilwara Bridge,</br>
+								Nagpur Road</br>
 								Jabalpur, M.P.</br>
 							</span>
 							</div>

@@ -18,7 +18,7 @@ body{
 }
 header{
 	background-image:linear-gradient(rgba(105,105,105,0.4),rgba(105,105,105,0.4)),url("../images/theme3.jpg") ;
-	height:350vh;
+	height:450vh;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position:center;

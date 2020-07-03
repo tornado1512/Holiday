@@ -15,7 +15,7 @@
 						<img src="images/pic.png" alt="logo" class="logo1">
 						
 						<ul class="main-nav animated slideInDown "  id="check-class">
-							<li><a href="#"><b>HOME</b></a></li>
+							<li><a href="home.index"><b>HOME</b></a></li>
 							<li><a href="about.jsp"><b>ABOUT</b></a></li>
 							<li><a href="explore.jsp"><b>EXPLORE</b></a></li>
 							<li><a href="select_city.jsp"><b>RESTAURANT</b></a></li>
