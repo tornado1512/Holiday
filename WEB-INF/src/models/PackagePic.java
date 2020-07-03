@@ -16,7 +16,9 @@ public class PackagePic{
 		this.packageId=packageId;
 
 	}
-	public PackagePic(){}
+	public PackagePic(){
+	
+	}
 	public PackagePic(String picPath,Packagee packageId){
 		this.picPath=picPath;
 		this.packageId=packageId;
