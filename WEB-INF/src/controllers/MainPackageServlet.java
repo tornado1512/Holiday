@@ -24,6 +24,11 @@ public class MainPackageServlet extends HttpServlet{
 		}else{
 			nextPage="error.jsp";
 		}
+		
+		Accomodation acc = new Accomodation();
+		Accomodation record=acc.collectAccomodation2(records.getAccomodationId().getAccomodationId());
+		session.setAttribute("record",record);
+
 		request.getRequestDispatcher(nextPage).forward(request,response);
 	}
 }
