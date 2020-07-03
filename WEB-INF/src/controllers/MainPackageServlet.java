@@ -19,8 +19,11 @@ public class MainPackageServlet extends HttpServlet{
 
 		PackagePic pacpic=new PackagePic();
 		ArrayList<PackagePic> path=pacpic.collectPics(packId);
+		if(!path.isEmpty()){
 		session.setAttribute("path",path);
-
+		}else{
+			nextPage="error.jsp";
+		}
 		request.getRequestDispatcher(nextPage).forward(request,response);
 	}
 }

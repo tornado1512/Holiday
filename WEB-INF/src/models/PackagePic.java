@@ -48,7 +48,7 @@ public class PackagePic{
 			Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/minor?user=root&password=1234");
 			String query="select pic_path from package_pics where package_id=?";
 			PreparedStatement pst=con.prepareStatement(query);
-			pst.setInt(1,packageId.getPackageId());  
+			pst.setInt(1,PackageId);  
 			ResultSet rst =pst.executeQuery();
 			while(rst.next()){
 				pics.add(rst.getString(1));

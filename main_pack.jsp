@@ -12,7 +12,6 @@
 
 <meta charset="utf-8"/><link rel="icon" href="/tailblocks/favicon.png"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="Web site created using create-react-app"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.4.6/tailwind.min.css"><link rel="manifest" href="/tailblocks/manifest.json"/><link href="/tailblocks/static/css/main.e64c1c7e.chunk.css" rel="stylesheet">
 
-<meta charset="utf-8"/><link rel="icon" href="/tailblocks/favicon.png"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="Web site created using create-react-app"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.4.6/tailwind.min.css"><link rel="manifest" href="/tailblocks/manifest.json"/><link href="/tailblocks/static/css/main.e64c1c7e.chunk.css" rel="stylesheet">
  </head>
  <body>
 		<header>
@@ -30,8 +29,7 @@
 						<a href="#" class="mobile-icon" onclick="slideshow()"><i class="fa fa-bars"></i></a>
 				</div>
 			</nav>
-			<%Packagee pac=session.getAttribute("records");%>
-			<!--<%ArrayList<RestFood> menu=(ArrayList)session.getAttribute("menu");%>-->
+			<%Packagee pac=(Packagee)session.getAttribute("records");%>
 			<%ArrayList<String> path=(ArrayList)session.getAttribute("path");%>
 			
 			<div class="display-content">
