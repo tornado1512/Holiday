@@ -4,14 +4,15 @@
 <!doctype html>
 <html lang="en">
  <head>
-  <title>Holidays</title>
- <link rel="stylesheet" type="text/css"  href="css/main_rest.css" />
+  <title>Package</title>
+ <link rel="stylesheet" type="text/css"  href="css/main_pack.css" />
  <link href="http://fonts.googleapis.com/css?family=Flamenco" rel="stylesheet">
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <meta charset="utf-8"/><link rel="icon" href="/tailblocks/favicon.png"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="Web site created using create-react-app"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.4.6/tailwind.min.css"><link rel="manifest" href="/tailblocks/manifest.json"/><link href="/tailblocks/static/css/main.e64c1c7e.chunk.css" rel="stylesheet">
 
+<link rel="icon" href="/tailblocks/favicon.png"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="Web site created using create-react-app"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.4.6/tailwind.min.css"><link rel="manifest" href="/tailblocks/manifest.json"/><title>tailblocks — Ready-to-use Tailwind CSS blocks</title><link href="/tailblocks/static/css/main.e64c1c7e.chunk.css" rel="stylesheet">
  </head>
  <body>
 		<header>
@@ -31,7 +32,7 @@
 			</nav>
 			<%Packagee pac=(Packagee)session.getAttribute("records");%>
 			<%ArrayList<String> path=(ArrayList)session.getAttribute("path");%>
-			
+			<%Accomodation record=(Accomodation)session.getAttribute("record");%>
 			<div class="display-content">
 						<section class="text-gray-700 body-font">
 							  <div class="container px-5 py-24 mx-auto flex flex-wrap" id="top-div">
@@ -117,11 +118,11 @@
 												2.Package Category - <%= pac.getTypeCategoryId()%></br>
 												3.No Of Days - <%= pac.getDays()%></br>
 												4.Budget per Day - <%= pac. getCost()%></br>
-												5.Start end point - <%= pac. getStartEndPoint()%></br></h2>
-												6.Food Schedule - <%= pac.getFood()%></br></h2>
-												7.Place Visit - <%= pac.getPlaceVisit()%></br></h2>
-												8.Transport Facility - <%= pac.getTransport()%></br></h2>
-												9.Package Details - <%= pac.getPackageDetails()%></br></h2>
+												5.Start end point - <%= pac. getStartEndPoint()%></br>
+												6.Food Schedule - <%= pac.getFood()%></br>
+												7.Place Visit - <%= pac.getPlaceVisit()%></br>
+												8.Transport Facility - <%= pac.getTransport()%></br>
+												9.Package Details - <%= pac.getPackageDetails()%></br>
 												10.Contact Details - <%= pac.getContactNo()%></br></h2>
 											</div>
 											<div class="flex">
@@ -130,9 +131,23 @@
 										  </div>
 										</div>
 									  </div>
-									</section>
-
+									</section></br></br>
 									
+									<section class="text-gray-700 body-font">
+										  <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+									 <p align="center" style="font-size:40px;color:white"><b>BEST ACCOMODATION IN AFFORDABLE PRICE!!!..</b></p>
+											<img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="hero" src="<%= record.getAccomodationPicPath()%>" id="pic1">
+											<div class="text-center lg:w-2/3 w-full">
+											  <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900"><%= record. getAccomodationName()%></h1>
+											  <p class="mb-8 leading-relaxed" style="color:white">
+													<h1>ACCOMODATION NAME-<%= record.getAccomodationName()%></br>
+													ACCOMODATION ADDRESS-<%= record.getAddress()%></br>
+													ACCOMODATION CITY-<%= record.getCity()%></br>
+													</h1>
+											  </p>
+											</div>
+										  </div>
+									</section>
 									
 
 
@@ -151,6 +166,7 @@
  </script>
  <script src="js/getPackage.js"></script>
  <script src="js/rest_gallery.js"></script>
+ <script src="js/accomodation.js"></script>
 	<c:import url="footer.jsp" />
  </body>
 </html>
