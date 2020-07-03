@@ -61,7 +61,7 @@ public class SaveAccomodationServlet extends HttpServlet{
 							System.out.println(realPath);
 							fileItem.write(file);
 							
-							pic=pic+fileItem.getName();
+							pic=realPath+fileItem.getName();
 							System.out.println(pic);
 							//RestPic rp= new RestPic(file.getAbsolutePath(),restRegister);
 						}catch (Exception e){
