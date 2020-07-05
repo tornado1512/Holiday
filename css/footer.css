@@ -9,8 +9,11 @@
 	display:block;
 	overflow:hidden;
 	padding: 70px 0;
+	bottom:0;
 	box-sizing: border-box;
 	background-color:black;
+	position: relative;	
+
 }
 .inner_footer{
 	display:block;
