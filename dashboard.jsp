@@ -36,7 +36,7 @@
 			<%for(RestRegister rs:rest ){%>
 			<div class="gallery">
 				  <a  href="<%=rs.getDispImg()%>">
-					<img id="pic" src="<%=rs.getDispImg()%>" alt="display_image" width="600" height="400">
+					<img  src="<%=rs.getDispImg()%>" alt="display_image" width="600" height="400" class="image">
 				  </a>
 				  <div class="desc"><a href="add_menu.jsp"><%=rs.getRestName() %></a></div> 
 				  <%session.setAttribute("restName",rs.getRestName());%>
@@ -60,7 +60,7 @@
 				}
  </script>
 
-			<script src="js/pic.js"></script>
+			<script src="js/main_rest.js"></script>
 			<c:import url="footer.jsp" />
 
 		</div>
