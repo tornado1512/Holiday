@@ -46,6 +46,10 @@
 						</div>
 					  </div>
 				</section>
+
+
+
+
 		<!--<table class="table" >
 			<tr class="row">
 					<td><div align="center" class="inner_div">Discover<br>
@@ -66,6 +70,10 @@
 					<td><img src="images/Bookj.jpg" alt="img3"  class="image_cell"></td>
 			</tr>
 		</table>-->
+
+
+
+
 	</div>
  </body>
 </html>
