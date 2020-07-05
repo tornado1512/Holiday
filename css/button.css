@@ -5,17 +5,17 @@
   cursor: pointer; /* Add a pointer cursor on mouse-over */
 }
 
-.success {background-color: #2196F3;color: black;} /* Green */
+.success {background-color: #ecaa42;color: white;} /* Green */
 .success:hover {background-color: #46a049;}
 
-.info {background-color: #2196F3;color: black;} /* Blue */
+.info {background-color:#ecaa42;color: white;} /* Blue */
 .info:hover {background:#46a049;}
 
-.warning {background-color: #2196F3;color: black;} /* Orange */
+.warning {background-color:#ecaa42;color: white;} /* Orange */
 .warning:hover {background: #46a049;}
 
-.danger {background-color: #2196F3;color: black;} /* Red */
+.danger {background-color: #ecaa42;color: white;} /* Red */
 .danger:hover {background:#46a049;}
 
-.default {background-color: #2196F3; color: black;} /* Gray */
+.default {background-color: #ecaa42; color: white;} /* Gray */
 .default:hover {background: #46a049;}

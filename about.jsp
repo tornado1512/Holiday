@@ -14,7 +14,7 @@
 		<header>
 			<nav>
 				<div class="row clearfix">
-						<img src="images/pic.png" alt="logo" class="logo1">
+						<img src="static_images/pic.png" alt="logo" class="logo1">
 						
 						<ul class="main-nav animated slideInDown "  id="check-class">
 							<li><a href="index.jsp"><b>HOME</b></a></li>
@@ -48,7 +48,7 @@
 									<!--<p align="center" id="p"><b>OUR SUPPORT</b></p></br>-->
 									  <div class="p-4 md:w-1/3 ">
 										<div class="h-full border-2 border-gray-200 rounded-lg overflow-hidden disp">
-										  <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="images/about2.jpg" alt="blog">
+										  <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="static_images/about2.jpg" alt="blog">
 										  <div class="p-6">
 											<h1 class="title-font text-lg font-medium text-gray-900 mb-3 head"><p>EXPLORE</p></h1>
 											<p class="leading-relaxed mb-3">We provide you the best destination to plan an amazinf trip with your friends & family in affordable price.</p>
@@ -60,7 +60,7 @@
 									  </div>
 									  <div class="p-4 md:w-1/3">
 										<div class="h-full border-2 border-gray-200 rounded-lg overflow-hidden  disp">
-										  <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="images/about3.jpg" alt="blog">
+										  <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="static_images/about3.jpg" alt="blog">
 										  <div class="p-6">
 											<h1 class="title-font text-lg font-medium text-gray-900 mb-3 head"><p>PACKAGES</p></h1>
 											<p class="leading-relaxed mb-3">Our package section provides full facility and plan your trip in scheduled way to maximum utilize your Holiday and and make fun.</p>
@@ -72,7 +72,7 @@
 									  </div>
 									  <div class="p-4 md:w-1/3">
 										<div class="h-full border-2 border-gray-200 rounded-lg overflow-hidden  disp">
-										  <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="images/images.jpg" alt="blog">
+										  <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="static_images/images.jpg" alt="blog">
 										  <div class="p-6">
 											<h1 class="title-font text-lg font-medium text-gray-900 mb-3 head"><p>RESTAURANTS</p></h1>
 											<p class="leading-relaxed mb-3">We provide you immense option with different cultural foods and best taste in afforadle price with best hygene.</p>
@@ -93,7 +93,7 @@
 									<div class="flex flex-wrap -m-4 section3">
 									  <div class="lg:w-1/3 lg:mb-0 mb-6 p-4 section3-div1">
 										<div class="h-full text-center">
-										  <img alt="testimonial" class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" src="images/member1.jpg">
+										  <img alt="testimonial" class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" src="static_images/member1.jpg">
 										  <p class="leading-relaxed">He is 3rd year Undergraduate student persuing B.tech from Gyan Ganga College Of Technology ,Jabalpur from C.S department.Highly intrested in the field of full-stack development and having expertise in JAVA.Apart from this he is good in C/C++ ,MySQL,HTML,CSS and JS.</p>
 										  <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
 										  <h2 class="text-black-900 font-medium title-font tracking-wider text-sm info">VISHAL AGRAHARI</h2>
@@ -102,7 +102,7 @@
 									  </div>
 									  <div class="lg:w-1/3 lg:mb-0 mb-6 p-4 section3-div2" >
 										<div class="h-full text-center">
-										  <img alt="testimonial" class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" src="images/member3.jpg">
+										  <img alt="testimonial" class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" src="static_images/member3.jpg">
 										  <p class="leading-relaxed">She is 3rd year Undergraduate student persuing B.tech from Gyan Ganga College Of Technology ,Jabalpur from C.S department.Highly intrested in the field of full-stack development and having expertise in JAVA.Apart from this he is good in C/C++ ,MySQL,HTML,CSS and JS.</p>
 										  <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
 										  <h2 class="text-black-900 font-medium title-font tracking-wider text-sm info">SHREYA GUPTA</h2>

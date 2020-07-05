@@ -17,7 +17,7 @@
 			<header>
 			<nav>
 				<div class="row clearfix">
-						<img src="images/pic.png" alt="logo" class="logo1">
+						<img src="static_images/pic.png" alt="logo" class="logo1">
 						
 						<ul class="main-nav animated slideInDown " style="font-size:1vw;" id="check-class">
 							<li><a href="my_rest_home.jsp"><b>HOME.</b></a></li>

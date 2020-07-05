@@ -19,7 +19,7 @@
 		<header>
 			<nav>
 				<div class="row clearfix">
-						<img src="images/pic.png" alt="logo" class="logo1">
+						<img src="static_images/pic.png" alt="logo" class="logo1">
 						
 						<ul class="main-nav animated slideInDown "  id="check-class">
 							<li><a href="#"><b>HOME</b></a></li>

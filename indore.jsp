@@ -15,7 +15,7 @@
 		<header>
 			<nav>
 				<div class="row clearfix">
-						<img src="images/pic.png" alt="logo" class="logo1">
+						<img src="static_images/pic.png" alt="logo" class="logo1">
 						
 						<ul class="main-nav animated slideInDown "  id="check-class">
 							<li><a href="index.jsp"><b>HOME</b></a></li>
@@ -44,7 +44,7 @@
 							<div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 ">
 							  <div class="p-4 md:w-1/3 sm:mb-0 mb-6 disp">
 								<div class="rounded-lg h-64 overflow-hidden">
-								  <img class="object-cover object-center h-full w-full"  src="images/lp.jpg" alt="Lalbagh Palace">
+								  <img class="object-cover object-center h-full w-full"  src="static_images/lp.jpg" alt="Lalbagh Palace">
 								</div>
 								<h2 class="text-xl font-medium title-font text-gray-900 mt-5">Lalbagh Palace</h2>
 								<a href="#a"class="text-indigo-500 inline-flex items-center mt-3">Learn More
@@ -55,7 +55,7 @@
 							  </div>
 							  <div class="p-4 md:w-1/3 sm:mb-0 mb-6 disp">
 								<div class="rounded-lg h-64 overflow-hidden">
-								  <img  class="object-cover object-center h-full w-full" src="images/kg.jpg" alt="Khajrana Ganesh Temple">
+								  <img  class="object-cover object-center h-full w-full" src="static_images/kg.jpg" alt="Khajrana Ganesh Temple">
 								</div>
 								<h2 class="text-xl font-medium title-font text-gray-900 mt-5">Khajrana Ganesh Temple</h2>
 								<a href="#b" class="text-indigo-500 inline-flex items-center mt-3">Learn More
@@ -66,7 +66,7 @@
 							  </div>
 							  <div class="p-4 md:w-1/3 sm:mb-0 mb-6 disp">
 								<div class="rounded-lg h-64 overflow-hidden">
-								  <img class="object-cover object-center h-full w-full" src="images/km.jpg" alt="Kanch Mandir">
+								  <img class="object-cover object-center h-full w-full" src="static_images/km.jpg" alt="Kanch Mandir">
 								</div>
 								<h2 class="text-xl font-medium title-font text-gray-900 mt-5">Kanch Mandir</h2>
 								<a href="#c" class="text-indigo-500 inline-flex items-center mt-3">Learn More
@@ -77,7 +77,7 @@
 							  </div></br>
 							  <div class="p-4 md:w-1/3 sm:mb-0 mb-6 disp2">
 								<div class="rounded-lg h-64 overflow-hidden">
-								  <img  class="object-cover object-center h-full w-full" src="images/rw.jpg" alt="Rajwada">
+								  <img  class="object-cover object-center h-full w-full" src="static_images/rw.jpg" alt="Rajwada">
 								</div>
 								<h2 class="text-xl font-medium title-font text-gray-900 mt-5">Rajwada</h2>
 								<a href="#d" class="text-indigo-500 inline-flex items-center mt-3">Learn More
@@ -88,7 +88,7 @@
 							  </div>
 							  <div class="p-4 md:w-1/3 sm:mb-0 mb-6 disp2">
 								<div class="rounded-lg h-64 overflow-hidden">
-								  <img  class="object-cover object-center h-full w-full"  src="images/pw.jpg" alt="Patalpani Waterfall">
+								  <img  class="object-cover object-center h-full w-full"  src="static_images/pw.jpg" alt="Patalpani Waterfall">
 								</div>
 								<h2 class="text-xl font-medium title-font text-gray-900 mt-5">Patalpani Waterfall</h2>
 								<a href="#e" class="text-indigo-500 inline-flex items-center mt-3">Learn More
@@ -99,7 +99,7 @@
 							  </div>
 							  <div class="p-4 md:w-1/3 sm:mb-0 mb-6 disp2">
 								<div class="rounded-lg h-64 overflow-hidden">
-								  <img class="object-cover object-center h-full w-full" src="images/at.jpg" alt="Annapurna Temple">
+								  <img class="object-cover object-center h-full w-full" src="static_images/at.jpg" alt="Annapurna Temple">
 								</div>
 								<h2 class="text-xl font-medium title-font text-gray-900 mt-5">Annapurna Temple</h2>
 								<a href="#f" class="text-indigo-500 inline-flex items-center mt-3">Learn More
@@ -117,7 +117,7 @@
 
 						<section class="text-gray-700 body-font">
 						  <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col single">
-							<img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" src="images/lp.jpg" alt="Lalbagh Palace">
+							<img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" src="static_images/lp.jpg" alt="Lalbagh Palace">
 							<div class="text-center lg:w-2/3 w-full">
 					<h1 id="a"class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900" >Lalbagh Palace</h1>
 							  <p class="mb-8 leading-relaxed detail">Spread over an area of approximately 445 hectares, the ‘Van Vihar National Park’ is one of the most popular national parks in Central India, established in the year 1979. Considered as one of the best places to visit in Bhopal, the park is located just adjacent to the ‘Upper Lake’ and attracts loads of nature lovers, wildlife enthusiasts and nature photographers throughout the year. Though the park is actually a national park, on visiting it, you will get more of a zoological feel to it, rather it would be more appropriate to call it as a unique mix of a zoo and a wildlife sanctuary; on one side, you would spot the carnivores such as tigers, leopards, panthers, lions, bears and gharials enclosed in their natural habitats, bounded by trenches and walls, on the other end, this park would give you a completely different experience of spotting the herbivores like chital, blackbucks and sambars roaming about freely in their natural environs.</p>
@@ -132,7 +132,7 @@
 
 						<section class="text-gray-700 body-font">
 						  <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col single">
-							<img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" src="images/kg.jpg" alt="Khajrana Ganesh Temple">
+							<img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" src="static_images/kg.jpg" alt="Khajrana Ganesh Temple">
 							<div class="text-center lg:w-2/3 w-full">
 							  <h1 id="b" class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Khajrana Ganesh Temple</h1>
 							  <p class="mb-8 leading-relaxed detail">Highly revered by the local population, this beautiful Ganesh temple was built by the benevolent queen Ahilyabai Holkar. It is said that she built this powerful shrine to protect the idol of Lord Ganesh from the wrath of Aurangzeb. With a towering Ganesha statue and smaller temples dedicated to other deities, the beautiful and well-maintained temple complex exudes and aura of serenity and spirituality. This undoubtedly is one of the best places in Indore for stealing some tranquil moments and seeking blessings of the almightyWith a towering Ganesha statue and smaller temples dedicated to other deities, the beautiful and well-maintained temple complex exudes and aura of serenity and spirituality. This undoubtedly is one of the best places in Indore for stealing some tranquil moments and seeking blessings of the almighty</p>
@@ -147,7 +147,7 @@
 
 						<section class="text-gray-700 body-font">
 						  <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col single">
-							<img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" src="images/km.jpg" alt="Kanch Mandir">
+							<img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" src="static_images/km.jpg" alt="Kanch Mandir">
 							<div class="text-center lg:w-2/3 w-full">
 							  <h1 id="c"class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Kanch Mandir</h1>
 							  <p class="mb-8 leading-relaxed  detail">Located close to Rajwada Palace, you can add this unique Jain temple to your Indore sightseeing list. Though not a huge temple, its beauty lies in the fact that the entire temple is made of Belgian stained glass and mirrors – from the floor to the ceilings, stairs and walls, everything is crafted out of gleaming glass pieces, giving it an aura of opulence. The dazzling domed ceiling displays intricate designs crafted from glass pieces. Its grandeur is enhanced manifold when it is lit up with lights and candles on certain Jain festivals like Mahavir Jayanti.The dazzling domed ceiling displays intricate designs crafted from glass pieces. Its grandeur is enhanced manifold when it is lit up with lights and candles on certain Jain festivals like Mahavir Jayanti.The dazzling domed ceiling displays intricate designs crafted from glass pieces. Its grandeur is enhanced manifold when it is lit up with lights and candles on certain Jain festivals like Mahavir Jayanti.</p>
@@ -162,7 +162,7 @@
 
 						<section class="text-gray-700 body-font">
 						  <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col single">
-							<img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" src="images/rw.jpg" alt="Rajwada">
+							<img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" src="static_images/rw.jpg" alt="Rajwada">
 							<div class="text-center lg:w-2/3 w-full">
 							  <h1 id="d" class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Rajwada</h1>
 							  <p class="mb-8 leading-relaxed detail">This seven-storeyed historic attraction is the royal residence of Holkar dynasty, built in 1747AD by the founder of Holkar dynasty, Malhar Rao Holkar. The majestic structure is a fine example of the grandeur and architectural skills during the Holkar rule. Located in the heart of the old city, the 200-year Rajwada palace has influences of Maratha, Muslim and French styles of architecture.You can take a peek into the splendour of the bygone era while walking through the museum inside this popular Indore sightseeing spot. Let the rich baritone of Mr. Amitabh Bachchan’s voice take you on a journey through the story of the first Holkar king and the history of Indore, with the mesmerising light and sound show at 6:30PM You can take a peek into the splendour of the bygone era while walking through the museum inside this popular Indore sightseeing spot. Let the rich baritone of Mr. Amitabh Bachchan’s voice take you on a journey through the story of the first Holkar king and the history of Indore, with the mesmerising light and sound show at 6:30PM </p>
@@ -177,7 +177,7 @@
 
 						<section class="text-gray-700 body-font">
 						  <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col single">
-							<img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded"  src="images/pw.jpg" alt="Patalpani Waterfall">
+							<img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded"  src="static_images/pw.jpg" alt="Patalpani Waterfall">
 							<div class="text-center lg:w-2/3 w-full">
 							  <h1 id="e" class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Patalpani Waterfall</h1>
 							  <p class="mb-8 leading-relaxed  detail">This stunning waterfall is one of the top picks amongst Indore picnic spots for its natural beauty and picturesque setting. Located about 30 kms away from the city, you can witness the splendour of Patalpani waterfalls in the monsoon months. This is the perfect place in the rainy season to sit and enjoy some freshly roasted corn-cobs, soak in the breathtaking views and stare with wonder at the jaw-dropping 300-feet fall. A railway line passing along the area adds to the charm of the place. This is the perfect place in the rainy season to sit and enjoy some freshly roasted corn-cobs, soak in the breathtaking views and stare with wonder at the jaw-dropping 300-feet fall. A railway line passing along the area adds to the charm of the place. </p>
@@ -193,7 +193,7 @@
 
 						<section class="text-gray-700 body-font">
 						  <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col single">
-							<img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" src="images/at.jpg" alt="Annapurna Temple">
+							<img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" src="static_images/at.jpg" alt="Annapurna Temple">
 							<div class="text-center lg:w-2/3 w-full">
 							  <h1 id="f" class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Annapurna Temple</h1>
 							  <p class="mb-8 leading-relaxed  detail">The Annapurna temple is visited by thousand of devotees and tourists every year. The shrine is not just a place of pilgrimage for the spiritually inclined, but also one of the most popular places to visit in Indore. Its grand facade and architectural beauty stand out even from a distance. Dedicated to Goddess Annapurna, the deity of food, this magnificent temple has four life-size elephant sculptures guarding the entrance. A rare depiction of the 4-vedas in the Vedhshala is another reason to visit the temple and spend some peaceful moments in the presence of divinity..Dedicated to Goddess Annapurna, the deity of food, this magnificent temple has four life-size elephant sculptures guarding the entrance. A rare depiction of the 4-vedas in the Vedhshala is another reason to visit the temple and spend some peaceful moments in the presence of divinity..</p>
