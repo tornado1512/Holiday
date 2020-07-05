@@ -9,7 +9,7 @@
 		<div class="footer">
 				<div class="inner_footer">
 						<div class="logo_container">
-								<img src="images/logo5.jpg" class="logo" width="200" height="300">
+								<img src="static_images/logo5.jpg" class="logo" width="200" height="300">
 						</div>
 <!--<div class="footer_third">
 							<h1>Download Holiday</h1>

@@ -17,7 +17,7 @@
 			<header>
 			<nav>
 				<div class="row clearfix">
-						<img src="images/pic.png" alt="logo" class="logo1">
+						<img src="static_images/pic.png" alt="logo" class="logo1">
 						
 						<ul class="main-nav animated slideInDown " style="font-size:1vw;" id="check-class">
 							<li><a href="my_rest_home.jsp"><b>HOME.</b></a></li>
@@ -37,7 +37,6 @@
 			<div class="gallery">
 				  <a  href="<%=rs.getDispImg()%>">
 					<img class="image" src="<%=rs.getDispImg()%>" alt="display_image" width="600" height="400">
-					<img  src="<%=rs.getDispImg()%>" alt="display_image" width="600" height="400" class="image">
 				  </a>
 				  <div class="desc"><a href="add_menu.jsp"><%=rs.getRestName() %></a></div> 
 				  <%session.setAttribute("restName",rs.getRestName());%>

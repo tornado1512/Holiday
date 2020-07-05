@@ -19,7 +19,7 @@
 		<header>
 			<nav>
 				<div class="row clearfix">
-						<img src="images/pic.png" alt="logo" class="logo1">
+						<img src="static_images/pic.png" alt="logo" class="logo1">
 						
 						<ul class="main-nav animated slideInDown "  id="check-class">
 							<li><a href="index.jsp"><b>HOME</b></a></li>
@@ -58,7 +58,6 @@
 					<h2 class="title-font font-medium text-lg text-gray-900" style="color:white;"><%=rest.getRestName()%></h2>
 					<h3 class="text-gray-500 mb-3">Address:<%=rest.getRestAddress()%></h3>
 					<p class="mb-4">Contact:<%=rest.getRestContact()%></p>
-					<%=rest.getRestRegisterId()%>
 					<a href="view_more.do?rest_id=<%=rest.getRestRegisterId()%>"><p class="mb-4">Click Here for more info and order food</p></a>
 					<span class="inline-flex">
 					  <a class="text-gray-500">
@@ -83,8 +82,7 @@
 		<%}%>	  
     </div>
   </div>
-</section>
-
+</section>		
 		</div>
 </header>
 <c:import url="footer.jsp"/>

@@ -17,7 +17,7 @@ body{
 	clear: both;
 }
 header{
-	background-image:linear-gradient(rgba(105,105,105,0.4),rgba(105,105,105,0.4)),url("../images/theme3.jpg") ;
+	background-image:linear-gradient(rgba(105,105,105,0.4),rgba(105,105,105,0.4)),url("../static_images/theme3.jpg") ;
 	height:450vh;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -88,20 +88,20 @@ h1{
 }
 .btn-full{
 	background-color: transparent;
-	color: black;
+	color: white;
 	margin-right: 15px;
-	border: 1px solid black;
+	border: 1px solid white;
 }
 .btn-full:hover{
-	background-color:#ff66cc;
+	background-color:#ecaa42;
 }
 .btn-nav{
 	background-color: transparent;
-	color:black;
-	border: 1px solid black;
+	color:white;
+	border: 1px solid white;
 }
 .btn-nav:hover{
-	background-color:#ff66cc;
+	background-color:#ecaa42;
 }
 .color-change{
 	animation: colorchange 1s infinite;

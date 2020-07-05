@@ -12,7 +12,7 @@ public class dashboardServlet extends HttpServlet{
 	String nextPage="dashboard.jsp";
 	
 	Integer ownerId=(Integer)session.getAttribute("ownerId");
-	System.out.println(ownerId);
+
 	RestRegister restregister=new RestRegister();
 	//Integer  restRegister=restregister.getRestRegisterId()
 	ArrayList<RestRegister> restRegister=RestRegister.collectRest2(ownerId);
