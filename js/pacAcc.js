@@ -9,16 +9,32 @@ function initAll(){
 
 var fld,records;
 var recs,details;
+var pacBox,pic;
 function getAllElements(){
 	fld = document.getElementById('fld');
 	records = document.getElementById('records');
 	
 	//details = document.getElementById('details');	
-
+	pacBox = document.getElementById("box");
+	pic = document.getElementById("pic");
 }
 
 function setAllActions(){
 	fld.onkeyup = collectRecords;
+
+	pic.onclick=add;
+}
+
+var i=2;
+function add(){
+
+	var br=document.createElement('br');
+	pacBox.appendChild(br);
+	var inp=document.createElement("input");
+	inp.setAttribute("type","file");
+	inp.setAttribute("name","file"+i);
+	i++;
+	pacBox.appendChild(inp);
 }
 
 var req;
@@ -44,7 +60,7 @@ function showRecords(){
 	if(req.readyState==4&&req.status==200){
 		records.innerHTML = ' ';
 		records.style.display = 'block';
-		//alert(req.responseText);
+		alert(req.responseText);
 
 		var arr = eval(req.responseText);
 		

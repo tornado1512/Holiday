@@ -1,15 +1,15 @@
 window.onload=initAll;
 
 function initAll(){
-	alert("hello");	
+	alert("helloo")
 	getAllElements();
 	setAllActions();
 }
 
-var pac_box,pic;
+var pacBox,pic;
 function getAllElements(){
 	
-	pacBox = document.getElementById("pac_box");
+	pacBox = document.getElementById("box");
 	pic = document.getElementById("pic");
 }
 
@@ -20,7 +20,7 @@ function setAllActions(){
 
 var i=2;
 function add(){
-	alert(00);
+
 	var br=document.createElement('br');
 	pacBox.appendChild(br);
 	var inp=document.createElement("input");
