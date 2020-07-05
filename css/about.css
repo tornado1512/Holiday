@@ -17,7 +17,7 @@ body{
 	clear: both;
 }
 header{
-	background-image:linear-gradient(rgba(105,105,105,0.4),rgba(105,105,105,0.4)),url("../static_images/theme3.jpg") ;
+	background-image:linear-gradient(rgba(105,105,105,0.4),rgba(105,105,105,0.4)),url("../images/theme3.jpg") ;
 	height:auto;
 	background-size: cover;
 	background-repeat: no-repeat;

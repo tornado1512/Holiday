@@ -17,8 +17,8 @@ body{
 	clear: both;
 }
 header{
-	background-image: linear-gradient(rgba(105,105,105,0.4),rgba(105,105,105,0.4)),url("../static_images/theme3.jpg") ;
-	height:250vh;
+	background-image: linear-gradient(rgba(105,105,105,0.4),rgba(105,105,105,0.4)),url("../images/theme3.jpg") ;
+	height:auto;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position:center;
@@ -88,20 +88,20 @@ h1{
 }
 .btn-full{
 	background-color: transparent;
-	color: white;
+	color: black;
 	margin-right: 15px;
-	border: 1px solid white;
+	border: 1px solid black;
 }
 .btn-full:hover{
-	background-color:#ecaa42;
+	background-color:#ff66cc;
 }
 .btn-nav{
 	background-color: transparent;
-	color:white;
-	border: 1px solid white;
+	color:black;
+	border: 1px solid black;
 }
 .btn-nav:hover{
-	background-color:#ecaa42;
+	background-color:#ff66cc;
 }
 .color-change{
 	animation: colorchange 1s infinite;
