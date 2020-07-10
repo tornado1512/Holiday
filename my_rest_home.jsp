@@ -26,7 +26,7 @@
 						<a href="#" class="mobile-icon" onclick="slideshow()"><i class="fa fa-bars"></i></a>
 				</div>
 			</nav>
-			
+			</br></br></br></br></br></br></br></br></br></br></br></br>
 			<div class="main-content-header">
 			<h1 id="data"><span id="data2" class="color-change">Welcome To Your Restautrant Page</span></br></br>
 			<% String ownerName=(String)session.getAttribute("ownername");%>
@@ -34,7 +34,7 @@
 			<a href="dashboard.do" class="btn btn-full">View Your Restaurant</a>
 			<a href="rest_register.jsp" class="btn btn-nav">Add New Restaurant</a>
 			</div>
-
+		</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
 		</header>
 
 		<script type="text/javascript">

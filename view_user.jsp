@@ -41,7 +41,7 @@
 					  
 							<%String msg=(String)request.getAttribute("msg");%>
 					  <%if(!(msg==null)){%>
-					  <p class="lg:w-2/3 mx-auto leading-relaxed text-base" style="color:white;"><%=msg%></p>
+					  <h2 class="lg:w-2/3 mx-auto leading-relaxed text-base" style="color:white;"><%=msg%></h2>
 					<%}%>
 				
 					</div>
