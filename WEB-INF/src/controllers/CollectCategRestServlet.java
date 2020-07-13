@@ -21,6 +21,7 @@ public class CollectCategRestServlet extends HttpServlet{
 	}
 	else{
 		System.out.println(categ);
+		int id = (int)session.getAttribute("cityId");
 		int categId= new Category(categ).getCategoryId();
 		ArrayList<RestRegister> rests=RestRegister.collectRest4(categId);
 		request.setAttribute("rests",rests);

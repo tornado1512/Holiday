@@ -27,12 +27,24 @@ public class City{
 			PreparedStatement pst=con.prepareStatement(query);
 			pst.setString(1,cityName);
 			ResultSet rst=pst.executeQuery();
-			while(rst.next()){
+			//while(rst.next()){
+				
+				if(rst.next()){
+				System.out.println("inside"+rst.getInt(1));
 				cityId=rst.getInt(1);
-			}
+				}
+				else{
+					return -1;
+				}
+				
+				
+			//}
 		}catch(ClassNotFoundException|SQLException e){
 			e.printStackTrace();
+		}catch(Exception e){
+			e.printStackTrace();
 		}
+		
 		return cityId;
 	}
 

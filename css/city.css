@@ -6,7 +6,7 @@
 body{
 	font-size:20px;
 	overflow-x:hidden;
-	color:black;
+	color:white;
 	font-family: 'Flamenco', cursive;
 }
 .clearfix:after{
@@ -17,7 +17,7 @@ body{
 	clear: both;
 }
 header{
-	background-image:linear-gradient(rgba(105,105,105,0.4),rgba(105,105,105,0.4)),url("../static_images/theme3.jpg") ;
+	background-image: linear-gradient(rgba(105,105,105,0.4),rgba(105,105,105,0.4)),url("../static_images/theme3.jpg") ;
 	height:auto;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -77,11 +77,43 @@ h1{
 #data2{
 	font-size:55px;
 }
+.btn{
+	display: inline-block;
+	padding: 10px;
+	font-weight: lighter;
+	text-decoration:none;
+	text-transform: uppercase;
+	border-radius: 200px;
+	transition : background-color 0.2s,border 0.2s,color 0.2;
+}
+.btn-full{
+	background-color: transparent;
+	color: white;
+	margin-right: 15px;
+	border: 1px solid white;
+}
+.btn-full:hover{
+	background-color:#ecaa42;
+}
+.btn-nav{
+	background-color: transparent;
+	color:white;
+	border: 1px solid white;
+}
+.btn-nav:hover{
+	background-color:#ecaa42;
+}
+.color-change{
+	animation: colorchange 1s infinite;
+}
 @keyframes  colorchange{
 	0%{color:#ff66cc;}
 	25%{color:#3366ff;}
 	50%{color:#ff66cc;}
 	100%{color:#3366ff;}
+}
+.mobile-icon{
+	display:none;
 }
 /* Responsive Querries are from here*/
 @media only screen and (max-width:1180px){
@@ -114,20 +146,6 @@ h1{
 	}
 }
 
-.display-content{
-	width:auto;
-	height:auto;
-
-	/*border:2px solid red;*/
-}
-.top-heading{
-color:black;
-	font-size:30px;
-	font-weight:bold;
-	font-family:cursive;
-	padding:50px;
-	margin-left:50px;
-}
 @media only screen and (max-width: 480px){
 	.btn-full{
 		margin-bottom: 20px;

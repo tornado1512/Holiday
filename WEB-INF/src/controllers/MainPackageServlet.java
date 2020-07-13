@@ -27,6 +27,7 @@ public class MainPackageServlet extends HttpServlet{
 		
 		Accomodation acc = new Accomodation();
 		Accomodation record=acc.collectAccomodation2(records.getAccomodationId().getAccomodationId());
+		System.out.println(record.getCity());
 		System.out.println(record.getAccomodationPicPath());
 		session.setAttribute("record",record);
 
