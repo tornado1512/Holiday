@@ -57,10 +57,10 @@
 									  <img alt="gallery" class="w-full h-full object-cover object-center block image " src="<%= path.get(0)%>">
 									</div>
 									<div class="md:p-2 p-1 w-1/2">
-									  <img alt="gallery" class="w-full object-cover h-full object-center block" src="images/Bookj.jpg"class="image">
+									  <img alt="gallery" class="w-full object-cover h-full object-center block image" src="<%= path.get(0)%>">
 									</div>
 									<div class="md:p-2 p-1 w-1/2">
-									  <img alt="gallery" class="w-full object-cover h-full object-center block" src="images/logo5.jpg" class="image">
+									  <img alt="gallery" class="w-full object-cover h-full object-center block image" src="<%= path.get(0)%>">
 									</div>
 								  </div>
 								</div>

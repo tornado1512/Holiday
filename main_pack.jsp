@@ -143,7 +143,7 @@
 													<h1><b><i>We provide you the best Food facility in your destination city in your affordabvle budget with all facility of veg & non-veg with amazing taste along with complete hygine and saftey.Book your table and order your food .You also have facility of delivery</i></b></h1></br></br>
 													<h1>ACCOMODATION NAME - <%= record.getAccomodationName()%></br>
 													ACCOMODATION ADDRESS - <%= record.getAddress()%></br>
-													ACCOMODATION CITY - <%= record.getCity()%></br>
+													ACCOMODATION CITY - <%= record.getCity().getCityName()%></br>
 													</h1>
 											  </p>
 											  <div class="flex">

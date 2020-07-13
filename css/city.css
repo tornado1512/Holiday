@@ -89,6 +89,9 @@ h1{
 	width: 100%;
 	padding:0 2%;
 	}
+	.mobile-icon{
+		display:block;
+	}
 }
 @media only screen and (max-width:998px){
 	h1{font-size:180%;}

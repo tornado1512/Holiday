@@ -4,12 +4,12 @@
  <head>
   <title>INDORE</title>
  <link rel="stylesheet" type="text/css"  href="css/city.css" />
- <link rel="stylesheet" type="text/css"  href="css/footer.css" />
+ <!--<link rel="stylesheet" type="text/css"  href="css/footer.css" />-->
  <link href="http://fonts.googleapis.com/css?family=Flamenco" rel="stylesheet">
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<link rel="icon" href="/tailblocks/favicon.png"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="Web site created using create-react-app"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.4.6/tailwind.min.css"><link rel="manifest" href="/tailblocks/manifest.json"/><link href="/tailblocks/static/css/main.e64c1c7e.chunk.css" rel="stylesheet">
+<!--<link rel="icon" href="/tailblocks/favicon.png"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="Web site created using create-react-app"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.4.6/tailwind.min.css"><link rel="manifest" href="/tailblocks/manifest.json"/><link href="/tailblocks/static/css/main.e64c1c7e.chunk.css" rel="stylesheet">-->
  </head>
  <body>
 		<header>
@@ -24,7 +24,7 @@
 							<li><a href="select_city.jsp"><b>RESTAURANT</b></a></li>
 							<li><a href="login.jsp"><b>SIGNIN</b></a></li>
 						</ul>
-						<a href="#" class="mobile-icon" onclick="slideshow()"><i class="fa fa-bars"></i></a>
+						<!--<a href="#" class="mobile-icon" onclick="slideshow()"><i class="fa fa-bars"></i></a>-->
 				</div>
 			</nav>
 			<div class="display-content">

@@ -53,7 +53,7 @@
 		<%for(RestRegister rest:rests){%>
 			<div class="p-4 lg:w-1/2" style="color:white;">
 				<div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
-				  <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4"  id="pic" src="<%=rest.getDispImg()%>">
+				  <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4 image"  id="pic" src="<%=rest.getDispImg()%>">
 				  <div class="flex-grow sm:pl-8">
 					<h2 class="title-font font-medium text-lg text-gray-900" style="color:white;"><%=rest.getRestName()%></h2>
 					<h3 class="text-gray-500 mb-3">Address:<%=rest.getRestAddress()%></h3>
@@ -97,6 +97,6 @@
 					}
 				}
  </script>
- <script src="js/getRest.js"></script>
+ <script src="js/main_rest.js"></script>
  </body>
 </html>
